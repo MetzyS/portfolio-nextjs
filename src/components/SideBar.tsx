@@ -1,33 +1,33 @@
 import { NavLink } from "./NavLink";
 import { AiOutlineHome } from "react-icons/ai";
-export const SideBar = () => {
+export const SideBar = (props: { state: boolean }) => {
   return (
-    <div className="flex fixed flex-col gap-4 w-52 h-full pt-6 border-0 border-r lg:hidden text-sm text-slate-800 z-20 bg-white">
+    <div
+      className={`flex fixed flex-col gap-4 ${
+        props.state ? "w-64" : "w-0"
+      } h-full mt-12 pt-6 pl-3 border-0 border-r border-t lg:hidden text-sm text-slate-800 z-20 bg-white dark:bg-slate-800`}
+    >
       <NavLink
         text="Accueil"
         path="/"
-        className="p-2 font-semibold hover:bg-slate-100 active:bg-slate-200 mr-5 rounded-md"
         icon={AiOutlineHome}
         iconClass="w-5 h-5"
       />
       <NavLink
         text="Projets"
         path="/"
-        className="p-2 font-semibold hover:bg-slate-100 active:bg-slate-200 mr-5 rounded-md"
         icon={AiOutlineHome}
         iconClass="w-5 h-5"
       />
       <NavLink
         text="Curriculum"
         path="/"
-        className="p-2 font-semibold hover:bg-slate-100 active:bg-slate-200 mr-5 rounded-md"
         icon={AiOutlineHome}
         iconClass="w-5 h-5"
       />
       <NavLink
         text="Contact"
         path="/"
-        className="p-2 font-semibold hover:bg-slate-100 active:bg-slate-200 mr-5 rounded-md"
         icon={AiOutlineHome}
         iconClass="w-5 h-5"
       />
