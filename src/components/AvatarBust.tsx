@@ -2,8 +2,6 @@ import * as React from "react";
 
 export const AvatarBust = (props: {
   fill?: string;
-  width?: number;
-  height?: number;
   shirtColor?: string;
   sleeveColor?: string;
   skinColor?: string;
@@ -19,8 +17,6 @@ export const AvatarBust = (props: {
     <svg
       viewBox="0 0 329 400"
       xmlns="http://www.w3.org/2000/svg"
-      width={props.width}
-      height={props.height}
       className={props.className}
     >
       <defs>

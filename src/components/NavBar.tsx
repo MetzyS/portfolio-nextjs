@@ -30,7 +30,7 @@ export const NavBar = () => {
   const { menu, toggleMenu, closeMenu } = useMenu();
   return (
     <header className="w-full">
-      <nav className="fixed bg-white dark:bg-slate-800 w-full h-13 grid grid-cols-3 p-1 border-0 border-b border-b-slate-200 z-20">
+      <nav className="fixed bg-white dark:bg-slate-800 w-full h-13 grid grid-cols-3 p-1 border-0 border-b border-b-slate-200 dark:border-b-slate-600 z-20">
         <div className="flex gap-3 col-start-1 col-span-1 items-center">
           <MenuBtn />
           <a href="/">
