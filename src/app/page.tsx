@@ -1,3 +1,4 @@
+"use client";
 import { DefaultBtn } from "@/components/DefaultBtn";
 import { DecorationTag } from "@/components/DecorationTag";
 import { NavBar } from "@/components/NavBar";
@@ -7,6 +8,9 @@ import { AvatarBust } from "@/components/AvatarBust";
 import { FaLinkedin, FaReact } from "react-icons/fa";
 import { SiPhp, SiNextdotjs } from "react-icons/si";
 import { FaGithub } from "react-icons/fa";
+import { useHoveredPart } from "./stores/useAvatarColors";
+import { AvatarColorPicker } from "@/components/AvatarColorPicker";
+import { useAvatarColors } from "./stores/useAvatarColors";
 
 const ubuntu = Ubuntu({
   subsets: ["latin"],
@@ -18,6 +22,46 @@ const ubuntu_mono = Inconsolata({
 });
 
 export default function Home() {
+  const {
+    shirtIsHovered,
+    skinIsHovered,
+    sleeveIsHovered,
+    hairBandIsHovered,
+    laptopIsHovered,
+    toggleIsHovered,
+  } = useHoveredPart();
+
+  const { changeColor } = useAvatarColors();
+  const shirtColors = [
+    { color: "fill-yellow-600", displayColor: "bg-yellow-500" },
+    { color: "fill-red-600", displayColor: "bg-red-600" },
+    { color: "fill-blue-600", displayColor: "bg-blue-600" },
+    { color: "fill-green-600", displayColor: "bg-green-600" },
+  ];
+  const skinColor = [
+    { color: "fill-red-300", displayColor: "bg-red-300" },
+    { color: "fill-orange-300", displayColor: "bg-orange-300" },
+    { color: "fill-yellow-900", displayColor: "bg-yellow-900" },
+    { color: "fill-amber-950", displayColor: "bg-amber-950" },
+  ];
+  const sleeveColor = [
+    { color: "fill-yellow-100", displayColor: "bg-yellow-100" },
+    { color: "fill-red-100", displayColor: "bg-red-100" },
+    { color: "fill-blue-100", displayColor: "bg-blue-100" },
+    { color: "fill-lime-100", displayColor: "bg-lime-100" },
+  ];
+  const hairBandColor = [
+    { color: "fill-yellow-100", displayColor: "bg-yellow-100" },
+    { color: "fill-red-100", displayColor: "bg-red-100" },
+    { color: "fill-blue-100", displayColor: "bg-blue-100" },
+    { color: "fill-lime-100", displayColor: "bg-lime-100" },
+  ];
+  const laptopColor = [
+    { color: "fill-slate-100", displayColor: "bg-slate-100" },
+    { color: "fill-slate-300", displayColor: "bg-slate-300" },
+    { color: "fill-slate-500", displayColor: "bg-slate-500" },
+    { color: "fill-slate-950", displayColor: "bg-slate-950" },
+  ];
   return (
     <>
       <div
@@ -89,16 +133,51 @@ export default function Home() {
         <FaReact className="absolute top-72 right-0 bg-white dark:bg-slate-700 rounded-full w-20 h-20 p-4 text-sky-400 dark:text-white z-10 shadow-md hover:dark:text-sky-400" />
         <div className="relative rounded-full w-80 h-80 lg:w-96 lg:h-96 overflow-hidden drop-shadow-xl shadow-inner bg-gray-100 dark:bg-slate-700 col-span-3 col-start-4 ml-6">
           <AvatarBust
-            skinColor="fill-orange-300"
-            sleeveColor="fill-white dark:fill-lime-100"
-            // sleeveColor="fill-lime-800"
-            shirtColor="fill-yellow-600"
-            laptopColor="fill-slate-300 dark:fill-slate-200"
-            hairBandColor="fill-white"
+            // skinColor="fill-orange-300"
+            // sleeveColor="fill-lime-100"
+            // // sleeveColor="fill-lime-800"
+            // shirtColor="fill-yellow-600"
+            // laptopColor="fill-slate-300 dark:fill-slate-200"
+            // hairBandColor="fill-white"
             className="absolute -top-3 w-[350px] h-[350px] lg:w-[450px] lg:h-[450px]"
           />
           SiPhp
         </div>
+        {shirtIsHovered && (
+          <AvatarColorPicker
+            colors={shirtColors}
+            part="shirt"
+            menu="shirtIsHovered"
+          />
+        )}
+        {skinIsHovered && (
+          <AvatarColorPicker
+            colors={skinColor}
+            part="skin"
+            menu="skinIsHovered"
+          />
+        )}
+        {sleeveIsHovered && (
+          <AvatarColorPicker
+            colors={sleeveColor}
+            part="sleeve"
+            menu="sleeveIsHovered"
+          />
+        )}
+        {hairBandIsHovered && (
+          <AvatarColorPicker
+            colors={hairBandColor}
+            part="hairBand"
+            menu="hairBandIsHovered"
+          />
+        )}
+        {laptopIsHovered && (
+          <AvatarColorPicker
+            colors={laptopColor}
+            part="laptop"
+            menu="laptopIsHovered"
+          />
+        )}
       </div>
     </>
   );
