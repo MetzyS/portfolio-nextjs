@@ -16,7 +16,7 @@ export const AvatarBust = (props: {
   mouthColor?: string;
 }) => {
   const { shirt, skin, sleeve, hairBand, laptop } = useAvatarColors();
-  const { toggleIsHovered } = useHoveredPart();
+  const { toggleIsHovered, resetAllHovered } = useHoveredPart();
 
   return (
     <svg
@@ -44,7 +44,10 @@ export const AvatarBust = (props: {
           fill="none"
           // className={props.shirtColor}
           className={shirt}
-          onClick={() => toggleIsHovered("shirtIsHovered")}
+          onClick={() => {
+            resetAllHovered("shirtIsHovered");
+            toggleIsHovered("shirtIsHovered");
+          }}
         >
           <title>{"t-shirt"}</title>
         </path>
@@ -53,7 +56,10 @@ export const AvatarBust = (props: {
           fill="none"
           // className={props.shirtColor}
           className={shirt}
-          onClick={() => toggleIsHovered("shirtIsHovered")}
+          onClick={() => {
+            resetAllHovered("shirtIsHovered");
+            toggleIsHovered("shirtIsHovered");
+          }}
         >
           <title>{"t-shirt"}</title>
         </path>
@@ -65,7 +71,10 @@ export const AvatarBust = (props: {
           fill="none"
           // className={props.sleeveColor}
           className={sleeve}
-          onClick={() => toggleIsHovered("sleeveIsHovered")}
+          onClick={() => {
+            resetAllHovered("sleeveIsHovered");
+            toggleIsHovered("sleeveIsHovered");
+          }}
         >
           <title>{"manche"}</title>
         </path>
@@ -74,7 +83,10 @@ export const AvatarBust = (props: {
           fill="none"
           // className={props.sleeveColor}
           className={sleeve}
-          onClick={() => toggleIsHovered("sleeveIsHovered")}
+          onClick={() => {
+            resetAllHovered("sleeveIsHovered");
+            toggleIsHovered("sleeveIsHovered");
+          }}
         >
           <title>{"manche"}</title>
         </path>
@@ -86,7 +98,10 @@ export const AvatarBust = (props: {
           fill="none"
           // className={props.laptopColor}
           className={laptop}
-          onClick={() => toggleIsHovered("laptopIsHovered")}
+          onClick={() => {
+            resetAllHovered("laptopIsHovered");
+            toggleIsHovered("laptopIsHovered");
+          }}
         >
           <title>{"pc"}</title>
         </path>
@@ -98,7 +113,10 @@ export const AvatarBust = (props: {
           fill="none"
           // className={props.skinColor}
           className={skin}
-          onClick={() => toggleIsHovered("skinIsHovered")}
+          onClick={() => {
+            resetAllHovered("skinIsHovered");
+            toggleIsHovered("skinIsHovered");
+          }}
         >
           <title>{"tête"}</title>
         </path>
@@ -107,7 +125,10 @@ export const AvatarBust = (props: {
           fill="none"
           // className={props.skinColor}
           className={skin}
-          onClick={() => toggleIsHovered("skinIsHovered")}
+          onClick={() => {
+            resetAllHovered("skinIsHovered");
+            toggleIsHovered("skinIsHovered");
+          }}
         >
           <title>{"main"}</title>
         </path>
@@ -116,7 +137,10 @@ export const AvatarBust = (props: {
           fill="none"
           // className={props.skinColor}
           className={skin}
-          onClick={() => toggleIsHovered("skinIsHovered")}
+          onClick={() => {
+            resetAllHovered("skinIsHovered");
+            toggleIsHovered("skinIsHovered");
+          }}
         >
           <title>{"cou"}</title>
         </path>
@@ -128,7 +152,10 @@ export const AvatarBust = (props: {
           fill="none"
           // className={props.hairBandColor}
           className={hairBand}
-          onClick={() => toggleIsHovered("hairBandIsHovered")}
+          onClick={() => {
+            resetAllHovered("hairBandIsHovered");
+            toggleIsHovered("hairBandIsHovered");
+          }}
         >
           <title>{"elastique"}</title>
         </path>

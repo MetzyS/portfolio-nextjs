@@ -50,7 +50,7 @@ export const NavBar = () => {
         </div>
       </nav>
       {menu && (
-        <div className="absolute w-full h-full bg-slate-900 border-0 border-t border-t-slate-200 opacity-50 dark:opacity-80 mt-12 z-10" />
+        <div className="absolute w-full h-full bg-slate-900 border-0 border-t border-t-slate-200 opacity-50 dark:opacity-80 mt-12 z-10 lg:hidden" />
       )}
       {menu && <SideBar state={menu} />}
     </header>

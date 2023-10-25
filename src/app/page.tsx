@@ -39,7 +39,7 @@ export default function Home() {
     { color: "fill-green-600", displayColor: "bg-green-600" },
   ];
   const skinColor = [
-    { color: "fill-red-300", displayColor: "bg-red-300" },
+    { color: "fill-orange-200", displayColor: "bg-orange-200" },
     { color: "fill-orange-300", displayColor: "bg-orange-300" },
     { color: "fill-yellow-900", displayColor: "bg-yellow-900" },
     { color: "fill-amber-950", displayColor: "bg-amber-950" },
@@ -128,20 +128,11 @@ export default function Home() {
           text="<svg>"
           className="absolute top-24 left-20 z-10 text-xs text-opacity-20 dark:text-opacity-10"
         />
-        <SiNextdotjs className="absolute top-48 left-0 bg-white dark:bg-slate-700 rounded-full w-20 h-20 p-4 text-slate-900 dark:text-white z-10 shadow-md hover:dark:text-black" />
-        <SiPhp className="absolute top-8 -right-3 bg-white dark:bg-slate-700 rounded-full w-20 h-20 p-4 text-indigo-700 dark:text-white z-10 shadow-md hover:dark:text-indigo-700" />
-        <FaReact className="absolute top-72 right-0 bg-white dark:bg-slate-700 rounded-full w-20 h-20 p-4 text-sky-400 dark:text-white z-10 shadow-md hover:dark:text-sky-400" />
+        <SiNextdotjs className="absolute top-36 left-1 lg:top-44 xl:top-48 xl:left-0 bg-white dark:bg-slate-700 rounded-full w-20 h-20 p-4 text-slate-900 dark:text-white z-10 shadow-md hover:dark:text-black" />
+        <SiPhp className="absolute top-6 -right-5 lg:top-8 lg:-right-3 bg-white dark:bg-slate-700 rounded-full w-20 h-20 p-4 text-indigo-700 dark:text-white z-10 shadow-md hover:dark:text-indigo-700" />
+        <FaReact className="absolute top-56 -right-2 lg:top-72 lg:right-0 bg-white dark:bg-slate-700 rounded-full w-20 h-20 p-4 text-sky-400 dark:text-white z-10 shadow-md hover:dark:text-sky-400" />
         <div className="relative rounded-full w-80 h-80 lg:w-96 lg:h-96 overflow-hidden drop-shadow-xl shadow-inner bg-gray-100 dark:bg-slate-700 col-span-3 col-start-4 ml-6">
-          <AvatarBust
-            // skinColor="fill-orange-300"
-            // sleeveColor="fill-lime-100"
-            // // sleeveColor="fill-lime-800"
-            // shirtColor="fill-yellow-600"
-            // laptopColor="fill-slate-300 dark:fill-slate-200"
-            // hairBandColor="fill-white"
-            className="absolute -top-3 w-[350px] h-[350px] lg:w-[450px] lg:h-[450px]"
-          />
-          SiPhp
+          <AvatarBust className="absolute -top-3 w-[350px] h-[350px] lg:w-[450px] lg:h-[450px]" />
         </div>
         {shirtIsHovered && (
           <AvatarColorPicker
