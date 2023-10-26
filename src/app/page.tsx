@@ -66,7 +66,7 @@ export default function Home() {
     <>
       <div
         className={
-          "col-span-full md:col-start-1 md:col-end-4 flex flex-col w-full h-full mt-6 p-4 text-slate-800 dark:text-slate-100 " +
+          "md:col-start-1 md:col-end-4 flex flex-col m-auto w-max md:w-full h-full mt-6 pt-4 text-slate-800 dark:text-slate-100 " +
           ubuntu.className
         }
       >
@@ -75,14 +75,14 @@ export default function Home() {
         <DecorationTag text="<h1>" className="ml-6 mt-4 text-xs xl:text-sm" />
         <div className="ml-6 mt-4 text-5xl xl:text-8xl md:text-7xl font-bold w-full">
           <h1 className="drop-shadow-md">Hello!</h1>
-          <p className="text-2xl md:text-4xl xl:text-6xl">
+          <p className="text-2xl md:text-4xl xl:text-5xl">
             <span>Je suis </span>
             <span className="text-sky-600 dark:text-blue-500 drop-shadow-md">
               Adnène
             </span>
             ,
           </p>
-          <p className="text-2xl md:text-4xl xl:text-6xl">
+          <p className="text-2xl md:text-4xl xl:text-5xl">
             développeur web.
             <DecorationTag
               text="</h1>"
@@ -123,7 +123,7 @@ export default function Home() {
           </a>
         </div>
       </div>
-      <div className="hidden md:block relative w-80 h-80 lg:w-96 lg:h-96 mt-20 xl:mt-32">
+      <div className="hidden md:block relative w-80 h-80 lg:w-96 lg:h-96 mt-20 xl:mt-32 xl:ml-10">
         <DecorationTag
           text="<svg>"
           className="absolute top-24 left-20 z-10 text-xs text-opacity-20 dark:text-opacity-10"
