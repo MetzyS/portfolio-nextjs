@@ -66,7 +66,7 @@ export default function Home() {
     <>
       <div
         className={
-          "md:col-start-1 md:col-end-4 flex flex-col m-auto w-max md:w-full h-full mt-6 pt-4 text-slate-800 dark:text-slate-100 " +
+          "md:col-start-1 md:col-end-4 flex flex-col m-auto w-max md:w-full h-full mt-6 pt-4 md:pl-3 text-slate-800 dark:text-slate-100 " +
           ubuntu.className
         }
       >
@@ -100,6 +100,8 @@ export default function Home() {
         <div className="flex flex-col ml-2 mt-6">
           <DefaultBtn
             text="Télécharger mon CV"
+            path="/CV-HAMZAOUI.pdf"
+            download={true}
             className={
               "w-50 p-6 xl:p-8 rounded-md xl:text-sm font-normal tracking-widest lg:tracking-[0.15em] " +
               ubuntu_mono.className
