@@ -19,7 +19,7 @@ export default function RootLayout({
       <body className="dark:bg-slate-800">
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           <NavBar />
-          <main className="pt-12 md:grid md:grid-cols-6 md:max-w-[768px] md:m-auto xl:grid-cols-6 xl:max-w-[1024px] xl:m-auto lg:m-auto">
+          <main className="flex flex-col pt-12 md:max-w-[768px] md:m-auto xl:grid-cols-6 xl:max-w-[1024px] xl:m-auto lg:m-auto">
             {children}
           </main>
         </ThemeProvider>
