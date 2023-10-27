@@ -17,7 +17,7 @@ export const MainDescription = () => {
   return (
     <div
       className={
-        "md:col-start-1 md:col-end-4 flex flex-col m-auto w-max md:w-full h-full mt-6 pt-4 md:pl-3 text-slate-800 dark:text-slate-100 " +
+        "md:col-start-1 md:col-end-4 flex flex-col m-auto w-max md:w-full h-full md:pl-3 text-slate-800 dark:text-slate-100 " +
         ubuntu.className
       }
     >

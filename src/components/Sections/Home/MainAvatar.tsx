@@ -47,7 +47,7 @@ export const MainAvatar = () => {
   } = useHoveredPart();
   return (
     <>
-      <div className="hidden md:block relative w-max h-max lg:w-max lg:h-max mt-20 xl:mt-32 xl:ml-10 md:col-start-4 md:col-end-7">
+      <div className="hidden md:block relative w-max h-max lg:w-max lg:h-max m-auto xl:ml-10 md:col-start-4 md:col-end-7">
         <DecorationTag
           text="<svg>"
           className="absolute top-24 left-20 z-10 text-xs text-opacity-20 dark:text-opacity-10"
