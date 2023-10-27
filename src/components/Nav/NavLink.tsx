@@ -16,7 +16,7 @@ export const NavLink = (props: {
       href={props.path}
       className={
         props.className +
-        ` flex gap-1 items-center text-slate-800 dark:text-slate-100 p-2 font-semibold hover:bg-slate-200 dark:hover:bg-slate-700 active:bg-slate-300 dark:active:bg-slate-600 mr-5 rounded-md ${
+        ` w-max flex gap-1 items-center text-slate-800 dark:text-slate-100 p-2 font-semibold hover:bg-slate-200 dark:hover:bg-slate-700 active:bg-slate-300 dark:active:bg-slate-600 rounded-md ${
           props.active ? "text-zinc-900" : " "
         }`
       }

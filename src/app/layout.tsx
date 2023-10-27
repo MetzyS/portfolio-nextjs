@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { ThemeProvider } from "./providers/ThemeProvider";
 // import { switchThemeDuration } from "./constants";
 import "./globals.css";
-import { NavBar } from "@/components/NavBar";
+import { NavBar } from "@/components/Nav/NavBar";
 
 export const metadata: Metadata = {
   title: "MetzyS - Portfolio",
