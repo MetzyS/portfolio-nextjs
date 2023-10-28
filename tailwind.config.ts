@@ -9,6 +9,11 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      boxShadow: {
+        "inner-xl-default": "inset 0 15px 20px 0 rgba(0, 0, 0, 0.06)",
+        "inner-xl-dark": "inset 0 15px 20px 0 rgba(0,0,0,0.3)",
+        // "inner-xl-dark": "inset 0 15px 20px 0 rgba(0, 0, 0, 0.06)",
+      },
       fontFamily: {
         ubuntu: ["Ubuntu", "mono"],
       },
@@ -19,6 +24,11 @@ const config: Config = {
       },
       screens: {
         xs: "350px",
+      },
+      colors: {
+        dark: {
+          default: "#1b1b21",
+        },
       },
     },
   },

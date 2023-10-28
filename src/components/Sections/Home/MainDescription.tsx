@@ -2,6 +2,7 @@ import { DecorationTag } from "@/components/DecorationTag";
 import { DefaultBtn } from "@/components/DefaultBtn";
 import { Inconsolata, Ubuntu } from "@next/font/google";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { BsChevronDoubleDown } from "react-icons/bs";
 
 const ubuntu = Ubuntu({
   subsets: ["latin"],
@@ -17,14 +18,25 @@ export const MainDescription = () => {
   return (
     <div
       className={
-        "md:col-start-1 md:col-end-4 flex flex-col m-auto w-max md:w-full h-full md:pl-3 text-slate-800 dark:text-slate-100 " +
+        "md:col-start-1 md:col-end-4 flex flex-col m-auto w-max md:w-full h-full md:pl-3 text-slate-800 dark:text-slate-100 overflow-x-hidden " +
         ubuntu.className
       }
     >
-      <DecorationTag text="<html>" className="text-xs xl:text-sm" />
-      <DecorationTag text="<body>" className="ml-4 text-xs xl:text-sm" />
-      <DecorationTag text="<h1>" className="ml-6 mt-4 text-xs xl:text-sm" />
-      <div className="ml-6 mt-4 text-5xl xl:text-8xl md:text-7xl font-bold w-full">
+      <div className="absolute bottom-20 right-10 md:right-20 lg:bottom-16 lg:right-16 xl:bottom-20 xl:right-20 p-2 rounded-full hover:bg-slate-200 hover:dark:bg-slate-700 animate-bounce cursor-pointer">
+        <a href="#">
+          <BsChevronDoubleDown className="w-5 h-5" />
+        </a>
+      </div>
+      <DecorationTag text="<html>" className="text-sm lg:text-lg xl:text-xl " />
+      <DecorationTag
+        text="<body>"
+        className="ml-4 text-sm lg:text-lg xl:text-xl "
+      />
+      <DecorationTag
+        text="<h1>"
+        className="ml-6 mt-4 text-sm lg:text-lg xl:text-xl "
+      />
+      <div className="ml-6 my-0 xs:my-6 xl:my-8 text-5xl xl:text-8xl md:text-7xl font-bold w-full">
         <h1 className="drop-shadow-md">Hello!</h1>
         <p className="text-2xl md:text-4xl xl:text-5xl">
           <span>Je suis </span>
@@ -37,16 +49,16 @@ export const MainDescription = () => {
           développeur web.
           <DecorationTag
             text="</h1>"
-            className="font-normal ml-2 text-xs xl:text-sm"
+            className="font-normal ml-2 text-sm lg:text-lg xl:text-xl "
           />
         </p>
       </div>
       <div className="ml-6 mt-4">
-        <DecorationTag text="<p>" className="text-xs xl:text-sm" />
+        <DecorationTag text="<p>" className="text-sm lg:text-lg xl:text-xl " />
         <h2 className="text-lg md:text-3xl xl:text-4xl">
           Développeur Full-Stack
         </h2>
-        <DecorationTag text="</p>" className="text-xs xl:text-sm" />
+        <DecorationTag text="</p>" className="text-sm lg:text-lg xl:text-xl " />
       </div>
       <div className="flex flex-col ml-2 mt-6">
         <DefaultBtn
