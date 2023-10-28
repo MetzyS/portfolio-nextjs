@@ -10,7 +10,7 @@ export const DecorationTag = (props: { text: string; className?: string }) => {
     <span
       className={
         props.className +
-        " text-gray-400 cursor-default " +
+        " text-gray-300 dark:text-gray-500 cursor-default " +
         roboto_mono.className
       }
     >
