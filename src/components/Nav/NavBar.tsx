@@ -49,14 +49,14 @@ export const NavBar = () => {
           >
             <NavLink
               text={"A propos"}
-              path="/"
+              path="#about-section"
               icon={AiOutlineQuestionCircle}
               className="text-xs md:text-sm lg:text-base transition-all"
             />
             <span className="w-0 h-5 border-0 border-r border-slate-300 dark:border-slate-700"></span>
             <NavLink
               text={"Parcours"}
-              path="/"
+              path="#parcours-section"
               icon={PiPathFill}
               className="text-xs md:text-sm lg:text-base transition-all"
             />

@@ -40,7 +40,7 @@ export const MainDescription = () => {
         <h1 className="drop-shadow-md relative">
           Hello!{" "}
           <span className="absolute text-3xl top-2 md:text-5xl md:top-2 xl:text-6xl xl:top-5">
-            👋
+            👋🏽
           </span>
         </h1>
         <p className="text-2xl md:text-4xl xl:text-5xl">
@@ -51,7 +51,7 @@ export const MainDescription = () => {
           ,
         </p>
         <p className="text-2xl md:text-4xl xl:text-5xl">
-          développeur web.
+          développeur web
           <DecorationTag
             text="</h1>"
             className="font-normal ml-2 text-sm lg:text-lg xl:text-xl "
@@ -60,9 +60,7 @@ export const MainDescription = () => {
       </div>
       <div className="ml-6 mt-4">
         <DecorationTag text="<p>" className="text-sm lg:text-lg xl:text-xl " />
-        <h2 className="text-lg md:text-3xl xl:text-4xl">
-          Développeur Full-Stack
-        </h2>
+        <h2 className="text-lg md:text-3xl xl:text-4xl">Full-Stack</h2>
         <DecorationTag text="</p>" className="text-sm lg:text-lg xl:text-xl " />
       </div>
       <div className="flex flex-col ml-2 mt-6">

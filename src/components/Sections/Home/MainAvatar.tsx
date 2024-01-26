@@ -48,10 +48,10 @@ export const MainAvatar = () => {
   return (
     <>
       <div className="hidden md:block relative w-max h-max lg:w-max lg:h-max m-auto xl:ml-10 md:col-start-4 md:col-end-7">
-        {/* <DecorationTag
+        <DecorationTag
           text="<svg>"
           className="absolute top-24 left-20 z-10 text-xs text-opacity-20 dark:text-opacity-10"
-        /> */}
+        />
         <SiNextdotjs className="absolute top-36 left-1 lg:top-44 xl:top-48 xl:left-0 bg-white dark:bg-slate-700 rounded-full w-20 h-20 p-4 text-slate-900 dark:text-white z-10 shadow-md hover:dark:text-black" />
         <SiPhp className="absolute top-6 -right-2 lg:top-8 lg:right-1 bg-white dark:bg-slate-700 rounded-full w-20 h-20 p-4 text-indigo-700 dark:text-white z-10 shadow-md hover:dark:text-indigo-700" />
         <FaReact className="absolute top-56 right-1 lg:top-72 lg:right-3 bg-white dark:bg-slate-700 rounded-full w-20 h-20 p-4 text-sky-400 dark:text-white z-10 shadow-md hover:dark:text-sky-400" />
