@@ -32,11 +32,11 @@ export const NavBar = () => {
         <div className="flex gap-3 items-center w-max">
           <MenuBtn />
           {!menu && (
-            <a href="/">
+            <a href="/" className="group">
               <MetzysLogo
                 width={30}
                 height={30}
-                className="fill-sky-600 hover:fill-sky-500 dark:fill-blue-500 hover:dark:fill-blue-400"
+                className="fill-sky-600 dark:fill-blue-500 group-hover:fill-sky-500 group-hover:dark:fill-blue-400 transition-all"
               />
             </a>
           )}
@@ -51,21 +51,21 @@ export const NavBar = () => {
               text={"A propos"}
               path="/"
               icon={AiOutlineQuestionCircle}
-              className="text-xs md:text-sm lg:text-base"
+              className="text-xs md:text-sm lg:text-base transition-all"
             />
             <span className="w-0 h-5 border-0 border-r border-slate-300 dark:border-slate-700"></span>
             <NavLink
               text={"Parcours"}
               path="/"
               icon={PiPathFill}
-              className="text-xs md:text-sm lg:text-base"
+              className="text-xs md:text-sm lg:text-base transition-all"
             />
             <span className="w-0 h-5 border-0 border-r border-slate-300 dark:border-slate-700"></span>
             <NavLink
               text={"Projets"}
               path="/"
               icon={HiCodeBracket}
-              className="text-xs md:text-sm lg:text-base"
+              className="text-xs md:text-sm lg:text-base transition-all"
             />
           </div>
         </div>
@@ -77,7 +77,7 @@ export const NavBar = () => {
           <ThemeSwitcher />
           <DefaultBtn
             text="Contact"
-            className="font-semibold"
+            className="font-semibold transition-all"
             download={false}
           />
         </div>

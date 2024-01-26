@@ -22,8 +22,8 @@ export const MainDescription = () => {
         ubuntu.className
       }
     >
-      <div className="absolute bottom-20 right-10 md:right-20 lg:bottom-16 lg:right-16 xl:bottom-20 xl:right-20 p-2 rounded-full hover:bg-slate-200 hover:dark:bg-slate-700 animate-bounce cursor-pointer">
-        <a href="#">
+      <div className="absolute bottom-20 right-10 md:right-20 lg:bottom-16 lg:right-16 xl:bottom-20 xl:right-20 p-2 rounded-full hover:bg-slate-200 hover:dark:bg-slate-700 animate-bounce cursor-pointer transition-all">
+        <a href="#about-section">
           <BsChevronDoubleDown className="w-5 h-5" />
         </a>
       </div>
@@ -37,7 +37,12 @@ export const MainDescription = () => {
         className="ml-6 mt-4 text-sm lg:text-lg xl:text-xl "
       />
       <div className="ml-6 my-0 xs:my-6 xl:my-8 text-5xl xl:text-8xl md:text-7xl font-bold w-full">
-        <h1 className="drop-shadow-md">Hello!</h1>
+        <h1 className="drop-shadow-md relative">
+          Hello!{" "}
+          <span className="absolute text-3xl top-2 md:text-5xl md:top-2 xl:text-6xl xl:top-5">
+            👋
+          </span>
+        </h1>
         <p className="text-2xl md:text-4xl xl:text-5xl">
           <span>Je suis </span>
           <span className="text-sky-600 dark:text-blue-500 drop-shadow-md">

@@ -6,7 +6,7 @@ export const MenuBtn = () => {
       type="button"
       className={`flex flex-col ${
         menu ? "gap-0" : "gap-1"
-      } justify-center rounded-full hover:bg-slate-200 hover:dark:bg-slate-700 active:bg-slate-300 active:dark:bg-slate-500 h-10 w-10 items-center`}
+      } justify-center rounded-full hover:bg-slate-200 hover:dark:bg-slate-700 active:bg-slate-300 active:dark:bg-slate-500 h-10 w-10 items-center transition-all`}
       onClick={() => toggleMenu("menu")}
     >
       <span

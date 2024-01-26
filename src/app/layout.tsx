@@ -15,7 +15,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang="en" className="scroll-smooth" suppressHydrationWarning>
       <body className="dark:bg-slate-800">
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           <NavBar />
