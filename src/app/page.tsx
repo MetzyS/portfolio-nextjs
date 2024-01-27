@@ -24,10 +24,10 @@ export default function Home() {
       <RevealWrapper
         delay={75}
         useDelay="always"
-        reset={true}
+        reset={false}
         className="load-hidden"
       >
-        <section className="mx-10 relative">
+        <section className="mx-10 relative" id="about-section">
           <div className="shadow-md border-2 border-t-0 border-slate-100 dark:border-slate-700 mb-12 border-dashed" />
           <About />
         </section>

@@ -1,3 +1,4 @@
+import { AvatarArrow } from "@/components/AvatarArrow";
 import { AvatarCloud } from "@/components/AvatarCloud";
 import { AvatarHappy } from "@/components/AvatarHappy";
 import { AvatarTired } from "@/components/AvatarTired";
@@ -14,10 +15,9 @@ export const About = () => {
     <>
       <h1
         className={
-          "text-xl xl:text-4xl md:text-3xl font-bold text-slate-800 dark:text-slate-100 drop-shadow-xl my-20 " +
+          "text-xl xl:text-4xl md:text-3xl font-bold text-slate-800 dark:text-slate-100 drop-shadow-xl my-20 text-center " +
           ubuntu.className
         }
-        id="about-section"
       >
         Qui suis-je ? ✍🏽
       </h1>
@@ -54,31 +54,30 @@ export const About = () => {
             delay={150}
             useDelay="always"
             opacity={0}
-            reset={true}
+            reset={false}
             className="load-hidden"
           >
             <AvatarTired
               width={200}
               height={200}
-              className="absolute -top-3 left-10"
+              className="absolute -top-2 left-10"
             />
             <AvatarCloud
               width={80}
               height={80}
               className="absolute right-12 top-10"
-              fill="fill-slate-200"
+              text="Avant"
+              textClass="font-mono text-9xl font-semibold text-black"
             />
-            {/* <div className="absolute left-6 top-20 p-2 w-fit bg-gray-200 dark:bg-gray-600 shadow-inner  flex items-center justify-center rounded-full">
-              <span className="font-semibold text-sm text-slate-600 text-center dark:text-slate-300">
-                avant
-              </span>
-            </div> */}
+            <div className="md:absolute md:right-14 xl:right-[75px] md:top-32 xl:top-24 md:block hidden">
+              <AvatarArrow className="md:-rotate-[38deg] xl:-rotate-[20deg] md:w-[130px] md:h-[100px] xl:w-[210px] xl:h-[220px]" />
+            </div>
           </RevealWrapper>
           <RevealWrapper
             delay={150}
             useDelay="always"
             opacity={0}
-            reset={true}
+            reset={false}
             className="load-hidden"
           >
             <AvatarHappy
@@ -89,9 +88,9 @@ export const About = () => {
             <AvatarCloud
               width={80}
               height={80}
-              className="absolute left-24 top-52"
-              fill="fill-slate-200"
-              text="Avant"
+              className="absolute md:left-20 xl:left-24 md:top-48 xl:top-52"
+              text="Après"
+              textClass="font-mono text-9xl font-semibold text-black"
             />
             {/* <div className="absolute right-36 top-64 p-2 w-fit bg-gray-200 dark:bg-gray-600 shadow-inner flex items-center justify-center rounded-full">
               <span className="font-semibold text-sm text-slate-600 text-center dark:text-slate-300">
