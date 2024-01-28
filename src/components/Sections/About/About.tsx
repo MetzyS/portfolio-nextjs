@@ -2,6 +2,7 @@ import { AvatarArrow } from "@/components/AvatarArrow";
 import { AvatarCloud } from "@/components/AvatarCloud";
 import { AvatarHappy } from "@/components/AvatarHappy";
 import { AvatarTired } from "@/components/AvatarTired";
+import { AvatarTravel } from "@/components/AvatarTravel";
 import { Ubuntu } from "@next/font/google";
 import { RevealWrapper } from "next-reveal";
 
@@ -111,46 +112,11 @@ export const About = () => {
             reset={false}
             className="load-hidden"
           >
-            <AvatarTired
-              width={200}
-              height={200}
+            <AvatarTravel
+              width={300}
+              height={300}
               className="absolute left-10"
             />
-            <AvatarCloud
-              width={80}
-              height={80}
-              className="absolute right-12 top-16 z-20"
-              text="Avant"
-              textClass="font-mono text-9xl font-semibold text-black"
-            />
-            <div className="md:absolute top-40 right-16  xl:top-16 xl:right-32 md:block hidden">
-              <AvatarArrow className="rotate-[125deg] xl:rotate-[145deg] xl:-scale-y-100 w-[140px] h-[100px] xl:w-[180px] xl:h-[220px]" />
-            </div>
-          </RevealWrapper>
-          <RevealWrapper
-            delay={150}
-            useDelay="always"
-            opacity={0}
-            reset={false}
-            className="load-hidden"
-          >
-            <AvatarHappy
-              width={180}
-              height={180}
-              className="absolute top-56 xl:top-36 right-6"
-            />
-            <AvatarCloud
-              width={80}
-              height={80}
-              className="absolute md:left-20 xl:left-24 top-64 xl:top-52 z-20"
-              text="Après"
-              textClass="font-mono text-9xl font-semibold text-black"
-            />
-            {/* <div className="absolute right-36 top-64 p-2 w-fit bg-gray-200 dark:bg-gray-600 shadow-inner flex items-center justify-center rounded-full">
-              <span className="font-semibold text-sm text-slate-600 text-center dark:text-slate-300">
-                après
-              </span>
-            </div> */}
           </RevealWrapper>
         </div>
         <p className="flex flex-col text-base leading-tight text-slate-800 dark:text-slate-300 dark:bg-slate-700 bg-blue-100/50 rounded-lg p-4 shadow-xl dark:md:shadow-slate-900 md:shadow-md">
