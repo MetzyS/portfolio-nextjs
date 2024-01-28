@@ -40,7 +40,7 @@ export const MainDescription = () => {
         <h1 className="drop-shadow-md relative">
           Hello!{" "}
           <span className="absolute text-3xl top-2 md:text-5xl md:top-2 xl:text-6xl xl:top-5">
-            👋🏽
+            👋🏼
           </span>
         </h1>
         <p className="text-2xl md:text-4xl xl:text-5xl">

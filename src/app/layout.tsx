@@ -7,6 +7,11 @@ import { NavBar } from "@/components/Nav/NavBar";
 export const metadata: Metadata = {
   title: "MetzyS - Portfolio",
   description: "Portfolio",
+  icons: {
+    icon: "/images/favicon.ico",
+    apple: "/images/apple-touch-icon.png",
+  },
+  manifest: "/images/site.webmanifest",
 };
 
 export default function RootLayout({
