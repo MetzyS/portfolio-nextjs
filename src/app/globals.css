@@ -10,3 +10,35 @@ body {
 html.sr .load-hidden {
   visibility: hidden;
 }
+
+.cursor {
+  /* position: absolute;
+  width: 10px;
+  height: 10px;
+  border-radius: 100%; */
+}
+
+.cursor * {
+  mix-blend-mode: difference;
+}
+
+.cursor .cursor-glow {
+  /* position: absolute;
+  pointer-events: none;
+  width: 100px;
+  height: 100px;
+  background: rgba(255, 255, 255, 1);
+  border-radius: 100%; */
+  /* z-index: 0; */
+  /* opacity: 0; */
+  /* transform: scale(1) translateX(-50%) translateY(-50%);
+  transform-origin: top left;
+  filter: blur(32px); */
+}
+
+.cursor-glow.cursor-active {
+  filter: blur(22px);
+  width: 1000px;
+  height: 1000px;
+  opacity: 0.05;
+}
