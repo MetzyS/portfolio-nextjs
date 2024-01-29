@@ -23,7 +23,7 @@ export const About = () => {
         Qui suis-je ? ✍🏼
       </h1>
       <div className="flex md:grid md:grid-cols-2 md:gap-5">
-        <p className="flex flex-col text-base leading-tight text-slate-800 dark:text-slate-300 dark:bg-slate-700 bg-blue-100/50 rounded-lg p-4 shadow-xl dark:md:shadow-slate-900 md:shadow-md">
+        <p className="relative flex flex-col text-base leading-tight text-slate-800 dark:text-slate-300 dark:bg-slate-700/30 bg-sky-100/20 rounded-lg p-4 shadow-xl dark:md:shadow-slate-900 md:shadow-md overflow-hidden">
           <span className="mb-2 md:mb-0 text-base leading-tight">
             <strong>Ancien directeur d'ACM*</strong> avec plusieurs années
             d'expérience dans le monde de l'animation socio-culturelle.
@@ -92,59 +92,8 @@ export const About = () => {
               text="Après"
               textClass="font-mono text-9xl font-semibold text-black"
             />
-            {/* <div className="absolute right-36 top-64 p-2 w-fit bg-gray-200 dark:bg-gray-600 shadow-inner flex items-center justify-center rounded-full">
-              <span className="font-semibold text-sm text-slate-600 text-center dark:text-slate-300">
-                après
-              </span>
-            </div> */}
           </RevealWrapper>
         </div>
-      </div>
-
-      {/* test */}
-
-      <div className="flex md:grid md:grid-cols-2 md:gap-5 mt-32">
-        <div className="relative hidden md:block">
-          <RevealWrapper
-            delay={150}
-            useDelay="always"
-            opacity={0}
-            reset={false}
-            className="load-hidden"
-          >
-            <AvatarTravel
-              width={300}
-              height={300}
-              className="absolute left-10"
-            />
-          </RevealWrapper>
-        </div>
-        <p className="flex flex-col text-base leading-tight text-slate-800 dark:text-slate-300 dark:bg-slate-700 bg-blue-100/50 rounded-lg p-4 shadow-xl dark:md:shadow-slate-900 md:shadow-md">
-          <span className="mb-2 md:mb-0 text-base leading-tight">
-            <strong>Ancien directeur d'ACM*</strong> avec plusieurs années
-            d'expérience dans le monde de l'animation socio-culturelle.
-          </span>
-          <span className="text-xs italic">*Accueil collectif de Mineurs.</span>
-          <span className="mt-6">
-            J'ai entammé une{" "}
-            <strong>
-              reconversion professionnelle dans le développement web{" "}
-            </strong>
-            en 2022, en raison de ma passion pour l'informatique, le code 👨🏽‍💻 et
-            les jeux vidéo 🎮.
-          </span>
-          <span className="mt-6">
-            Depuis, je passe mes journées{" "}
-            <span className="text-sm italic">(et parfois mes nuits!)</span> a
-            <strong> coder</strong>, <strong>apprendre et explorer</strong>{" "}
-            cette nouvelle facette d'internet.
-          </span>
-          <span>
-            C'est d'ailleurs ce qui me motive le plus.. l'
-            <strong>apprentissage</strong>! Le renouvellement et la remise en
-            question permanente dans un domaine qui évolue sans cesse.
-          </span>
-        </p>
       </div>
     </>
   );

@@ -1,11 +1,11 @@
-let body = document.querySelector("body");
 let cursor = document.querySelector(".cursor");
-let glow = document.querySelector(".cursor-glow");
+let html = document.querySelector("html");
 
 let mouseX = 0;
 let mouseY = 0;
 let xp = 0;
 let yp = 0;
+let allowCursorLight = false;
 
 document.addEventListener("mousemove", (e) => {
   mouseX = e.pageX - 0;
@@ -14,12 +14,20 @@ document.addEventListener("mousemove", (e) => {
 
 setInterval(() => {
   xp += (mouseX - xp) / 10;
-  cursor.style.left = xp + "px";
-
   yp += (mouseY - yp) / 10;
-  cursor.style.top = yp + "px";
-}, 12);
-
-body.addEventListener("mouseover", () => {
-  glow.classList.add("cursor-active");
+  if (html.classList.contains("dark")) {
+    cursor.style.background =
+      "radial-gradient(400px at " +
+      xp +
+      "px " +
+      yp +
+      "px, rgba(23,62,172,0.15), transparent 80%)";
+  } else {
+    cursor.style.background =
+      "radial-gradient(400px at " +
+      xp +
+      "px " +
+      yp +
+      "px, rgba(0,0,0,0), transparent 0%)";
+  }
 });
