@@ -1,8 +1,8 @@
-import { AvatarArrow } from "@/components/AvatarArrow";
-import { AvatarBoat } from "@/components/AvatarBoat";
-import { AvatarCloud } from "@/components/AvatarCloud";
-import { AvatarHappy } from "@/components/AvatarHappy";
-import { AvatarTired } from "@/components/AvatarTired";
+import { AvatarArrow } from "@/components/Avatars/AvatarArrow";
+import { AvatarBoat } from "@/components/Avatars/AvatarBoat";
+import { AvatarCloud } from "@/components/Avatars/AvatarCloud";
+import { AvatarHappy } from "@/components/Avatars/AvatarHappy";
+import { AvatarTired } from "@/components/Avatars/AvatarTired";
 import { Ubuntu } from "@next/font/google";
 import { RevealWrapper } from "next-reveal";
 
@@ -13,7 +13,7 @@ const ubuntu = Ubuntu({
 
 export const About = () => {
   return (
-    <>
+    <div className="flex flex-col gap-10">
       <h1
         className={
           "text-xl xl:text-4xl md:text-3xl font-bold text-slate-800 dark:text-slate-100 drop-shadow-xl my-20 text-center " +
@@ -23,7 +23,7 @@ export const About = () => {
         Qui suis-je ? ✍🏼
       </h1>
       <div className="flex flex-col gap-6 md:grid md:grid-cols-2 md:gap-5 md:gap-y-28">
-        <p className="relative flex flex-col text-base leading-tight text-slate-800 dark:text-slate-300 dark:bg-slate-700/30 bg-sky-100/20 rounded-lg p-4 shadow-xl dark:md:shadow-slate-900 md:shadow-md overflow-hidden">
+        <p className="relative flex flex-col text-base leading-tight text-slate-800 dark:text-slate-300 dark:bg-slate-700/30 bg-indigo-200/20 rounded-lg p-4 md:p-5 shadow-xl shadow-slate-600/20 dark:md:shadow-slate-900 md:shadow-md overflow-hidden">
           <span className="mb-2 md:mb-0 text-base leading-tight">
             <strong>Ancien directeur d&apos;ACM*</strong> avec plusieurs années
             d&apos;expérience dans le monde de l&apos;animation
@@ -95,7 +95,8 @@ export const About = () => {
             />
           </RevealWrapper>
         </div>
-
+      </div>
+      <div className="flex flex-col md:grid md:grid-cols-2 md:gap-5 items-center">
         <div className="relative hidden md:block">
           <RevealWrapper
             delay={150}
@@ -104,42 +105,24 @@ export const About = () => {
             reset={false}
             className="load-hidden"
           >
-            <AvatarBoat
-              width={180}
-              height={180}
-              className="absolute top-56 xl:top-36 right-6 xl:right-0"
-            />
+            <AvatarBoat width={300} height={300} className="" />
           </RevealWrapper>
         </div>
 
-        <p className="relative flex flex-col text-base leading-tight text-slate-800 dark:text-slate-300 dark:bg-slate-700/30 bg-sky-100/20 rounded-lg p-4 shadow-xl dark:md:shadow-slate-900 md:shadow-md overflow-hidden">
+        <p className="relative flex flex-col text-base leading-tight text-slate-800 dark:text-slate-300 dark:bg-slate-700/30 bg-indigo-200/20 rounded-lg p-4 shadow-xl dark:md:shadow-slate-900 md:shadow-md overflow-hidden h-fit">
           <span className="mb-2 md:mb-0 text-base leading-tight">
-            <strong>Ancien directeur d&apos;ACM*</strong> avec plusieurs années
-            d&apos;expérience dans le monde de l&apos;animation
-            socio-culturelle.
-          </span>
-          <span className="text-xs italic">*Accueil collectif de Mineurs.</span>
-          <span className="mt-6">
-            J&apos;ai entammé une{" "}
-            <strong>
-              reconversion professionnelle dans le développement web{" "}
-            </strong>
-            en 2022, en raison de ma passion pour l&apos;informatique, le code
-            👨🏽‍💻 et les jeux vidéo 🎮.
+            En dehors de mes sessions de codage, j&apos;aime me détendre grâce à
+            la <strong>lecture</strong> 📖 et aux <strong>jeux vidéos</strong>{" "}
+            🕹️, plonger dans un monde fictif me permet de cultiver ma
+            créativité.
           </span>
           <span className="mt-6">
-            Depuis, je passe mes journées{" "}
-            <span className="text-sm italic">(et parfois mes nuits!)</span> a
-            <strong> coder</strong>, <strong>apprendre et explorer</strong>{" "}
-            cette nouvelle facette d&apos;internet.
-          </span>
-          <span>
-            C&apos;est d&apos;ailleurs ce qui me motive le plus.. l&apos;
-            <strong>apprentissage</strong>! Le renouvellement et la remise en
-            question permanente dans un domaine qui évolue sans cesse.
+            Le <strong>sport</strong> ⚽ a une place essentielle dans ma vie,
+            c&apos;est ce qui me permet de garder un équilibre sain que ce soit
+            physique ou mental.
           </span>
         </p>
       </div>
-    </>
+    </div>
   );
 };

@@ -1,7 +1,7 @@
 "use client";
 import { useHoveredPart } from "@/app/stores/useAvatarColors";
-import { AvatarBust } from "@/components/AvatarBust";
-import { AvatarColorPicker } from "@/components/AvatarColorPicker";
+import { AvatarBust } from "@/components/Avatars/AvatarBust";
+import { AvatarColorPicker } from "@/components/Avatars/AvatarColorPicker";
 import { DecorationTag } from "@/components/DecorationTag";
 import { FaReact } from "react-icons/fa";
 import { SiNextdotjs, SiPhp } from "react-icons/si";

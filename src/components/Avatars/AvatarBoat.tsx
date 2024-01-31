@@ -9,7 +9,13 @@ export const AvatarBoat = (props: {
 }) => {
   const { skin, shirt, sleeve } = useAvatarColors();
   return (
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 488.66 386.11">
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 488.66 386.11"
+      className={props.className}
+      width={props.width}
+      height={props.height}
+    >
       <path
         d="M27.09,209.63l-4.28-.21c-1.52-.1-7.89-.37-9.44-.6-8.09-1.22-9.87-6.29-10.54-10.82-2.34-15.75-.95-43.88-.41-59.6.11-3.16.81-7.85,3.64-10.72,4.14-4.19,18.51-6.74,24.5-7.42,2.32-.26,9.34-.55,9.34-.55l-12.8,89.91h0Z"
         className={sleeve + " stroke-none"}
