@@ -23,7 +23,7 @@ export const About = () => {
       >
         Qui suis-je ? ✍🏼
       </h1>
-      <div className="flex md:grid md:grid-cols-2 md:gap-5">
+      <div className="flex flex-col gap-6 md:grid md:grid-cols-2 md:gap-5 md:gap-y-28">
         <p className="relative flex flex-col text-base leading-tight text-slate-800 dark:text-slate-300 dark:bg-slate-700/30 bg-sky-100/20 rounded-lg p-4 shadow-xl dark:md:shadow-slate-900 md:shadow-md overflow-hidden">
           <span className="mb-2 md:mb-0 text-base leading-tight">
             <strong>Ancien directeur d'ACM*</strong> avec plusieurs années
@@ -95,20 +95,8 @@ export const About = () => {
             />
           </RevealWrapper>
         </div>
+
         <div className="relative hidden md:block">
-          <RevealWrapper
-            delay={150}
-            useDelay="always"
-            opacity={0}
-            reset={false}
-            className="load-hidden"
-          >
-            <AvatarTravel
-              width={200}
-              height={200}
-              className="absolute left-10 xl:left-4"
-            />
-          </RevealWrapper>
           <RevealWrapper
             delay={150}
             useDelay="always"
@@ -123,6 +111,7 @@ export const About = () => {
             />
           </RevealWrapper>
         </div>
+
         <p className="relative flex flex-col text-base leading-tight text-slate-800 dark:text-slate-300 dark:bg-slate-700/30 bg-sky-100/20 rounded-lg p-4 shadow-xl dark:md:shadow-slate-900 md:shadow-md overflow-hidden">
           <span className="mb-2 md:mb-0 text-base leading-tight">
             <strong>Ancien directeur d'ACM*</strong> avec plusieurs années
