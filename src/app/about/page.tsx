@@ -15,16 +15,24 @@ const ubuntu = Ubuntu({
 export default function About() {
   return (
     <div className="flex flex-col gap-10 my-20 xs:my-24 mx-6">
-      <h1
-        className={
-          "text-xl xl:text-4xl md:text-3xl font-bold text-slate-800 dark:text-slate-100 drop-shadow-xl mb-10 text-center " +
-          ubuntu.className
-        }
-      >
-        Qui suis-je ? ✍🏼
-      </h1>
       <RevealWrapper
         delay={0}
+        useDelay="always"
+        opacity={0}
+        reset={false}
+        className="load-hidden"
+      >
+        <h1
+          className={
+            "text-xl xl:text-4xl md:text-3xl font-bold text-slate-800 dark:text-slate-100 drop-shadow-xl mb-10 text-center " +
+            ubuntu.className
+          }
+        >
+          Qui suis-je ? ✍🏼
+        </h1>
+      </RevealWrapper>
+      <RevealWrapper
+        delay={150}
         useDelay="always"
         opacity={0}
         reset={false}
@@ -61,7 +69,7 @@ export default function About() {
             </span>
           </p>
           <RevealWrapper
-            delay={100}
+            delay={250}
             useDelay="always"
             opacity={0}
             reset={false}
@@ -101,7 +109,7 @@ export default function About() {
       </RevealWrapper>
 
       <RevealWrapper
-        delay={250}
+        delay={350}
         useDelay="always"
         opacity={0}
         reset={false}
@@ -109,7 +117,7 @@ export default function About() {
       >
         <div className="flex flex-col md:grid md:grid-cols-2 md:gap-5 items-center">
           <RevealWrapper
-            delay={350}
+            delay={400}
             useDelay="always"
             opacity={0}
             reset={false}
