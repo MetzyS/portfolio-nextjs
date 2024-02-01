@@ -29,9 +29,9 @@ export default function Journey() {
       </RevealWrapper>
       <RevealWrapper delay={100}>
         <JourneyBlock text="test" delay={150} right={false} />
-        <JourneyBlock text="test" delay={150} right={true} />
-        <JourneyBlock text="test" delay={150} right={false} />
-        <JourneyBlock text="test" delay={150} right={true} />
+        <JourneyBlock text="test" delay={350} right={true} />
+        <JourneyBlock text="test" delay={550} right={false} />
+        <JourneyBlock text="test" delay={750} right={true} />
       </RevealWrapper>
     </div>
   );

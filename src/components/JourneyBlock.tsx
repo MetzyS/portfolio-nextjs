@@ -8,7 +8,13 @@ export default function JourneyBlock(props: {
   delay: number;
 }) {
   return (
-    <RevealWrapper delay={props.delay} className="w-full flex flex-col">
+    <RevealWrapper
+      delay={props.delay}
+      className="w-full flex flex-col load-hidden"
+      useDelay="always"
+      opacity={0}
+      reset={false}
+    >
       <span className="w-3 h-3 rounded-full border-blue-500 border-4 bg-white dark:bg-slate-800 self-center absolute top-3"></span>
       <div className="grid grid-cols-[1fr_5px_1fr] gap-10 h-10">
         <div
