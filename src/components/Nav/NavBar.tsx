@@ -10,6 +10,8 @@ import { NavLink } from "./NavLink";
 import { HiCodeBracket } from "react-icons/hi2";
 import { PiPathFill } from "react-icons/pi";
 import { AiOutlineQuestionCircle } from "react-icons/ai";
+import { IoHomeOutline } from "react-icons/io5";
+import Link from "next/link";
 
 const roboto = Roboto({
   subsets: ["latin"],
@@ -31,13 +33,13 @@ export const NavBar = () => {
         <div className="flex gap-3 items-center w-max">
           <MenuBtn />
           {!menu && (
-            <a href="/" className="group">
+            <Link href="/" className="group">
               <MetzysLogo
                 width={30}
                 height={30}
                 className="fill-sky-600 dark:fill-blue-500 group-hover:fill-sky-500 group-hover:dark:fill-blue-400 transition-all"
               />
-            </a>
+            </Link>
           )}
         </div>
         <div className="flex col-start-2 justify-center items-center">
@@ -47,15 +49,22 @@ export const NavBar = () => {
             } transition-all`}
           >
             <NavLink
+              text={"Accueil"}
+              path="/"
+              icon={IoHomeOutline}
+              className="text-xs md:text-sm lg:text-base transition-all"
+            />
+            <span className="w-0 h-5 border-0 border-r border-slate-300 dark:border-slate-700"></span>
+            <NavLink
               text={"A propos"}
-              path="#about-section"
+              path="about"
               icon={AiOutlineQuestionCircle}
               className="text-xs md:text-sm lg:text-base transition-all"
             />
             <span className="w-0 h-5 border-0 border-r border-slate-300 dark:border-slate-700"></span>
             <NavLink
               text={"Parcours"}
-              path="#journey-section"
+              path="journey"
               icon={PiPathFill}
               className="text-xs md:text-sm lg:text-base transition-all"
             />

@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export const NavLink = (props: {
   text: string;
@@ -12,7 +13,7 @@ export const NavLink = (props: {
   customFont?: string;
 }) => {
   return (
-    <a
+    <Link
       href={props.path}
       className={
         props.className +
@@ -32,6 +33,6 @@ export const NavLink = (props: {
       <span className={props.textClass ? props.textClass : ""}>
         {props.text}
       </span>
-    </a>
+    </Link>
   );
 };

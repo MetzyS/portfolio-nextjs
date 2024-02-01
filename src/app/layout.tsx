@@ -1,3 +1,4 @@
+// "use client";
 import type { Metadata } from "next";
 import { ThemeProvider } from "./providers/ThemeProvider";
 import "./globals.css";
