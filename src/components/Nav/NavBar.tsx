@@ -2,7 +2,6 @@
 import { useMenu } from "@/app/stores/useMenu";
 import { Roboto } from "@next/font/google";
 import { Roboto_Mono } from "@next/font/google";
-import Image from "next/image";
 import { DefaultBtn } from "../DefaultBtn";
 import { MenuBtn } from "../MenuBtn";
 import { MetzysLogo } from "../MetzysLogo";
@@ -56,7 +55,7 @@ export const NavBar = () => {
             <span className="w-0 h-5 border-0 border-r border-slate-300 dark:border-slate-700"></span>
             <NavLink
               text={"Parcours"}
-              path="#parcours-section"
+              path="#journey-section"
               icon={PiPathFill}
               className="text-xs md:text-sm lg:text-base transition-all"
             />

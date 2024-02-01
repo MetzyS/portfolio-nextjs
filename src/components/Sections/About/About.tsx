@@ -44,7 +44,7 @@ export const About = () => {
             <strong> coder</strong>, <strong>apprendre et explorer</strong>{" "}
             cette nouvelle facette d&apos;internet.
           </span>
-          <span>
+          <span className="mt-6">
             C&apos;est d&apos;ailleurs ce qui me motive le plus.. l&apos;
             <strong>apprentissage</strong>! Le renouvellement et la remise en
             question permanente dans un domaine qui évolue sans cesse.
@@ -71,7 +71,7 @@ export const About = () => {
               textClass="font-mono text-9xl font-semibold text-black"
             />
             <div className="md:absolute top-40 right-16  xl:top-16 xl:right-44 md:block hidden">
-              <AvatarArrow className="rotate-[125deg] xl:rotate-[105deg] w-[140px] h-[100px] xl:w-[95px] xl:h-[220px]" />
+              <AvatarArrow className="rotate-[125deg] xl:rotate-[105deg] w-[140px] h-[100px] xl:w-[95px] xl:h-[220px] dark:fill-white" />
             </div>
           </RevealWrapper>
           <RevealWrapper
@@ -112,9 +112,10 @@ export const About = () => {
         <p className="relative flex flex-col text-base leading-tight text-slate-800 dark:text-slate-300 dark:bg-slate-700/30 bg-indigo-200/20 rounded-lg p-4 shadow-xl dark:md:shadow-slate-900 md:shadow-md overflow-hidden h-fit">
           <span className="mb-2 md:mb-0 text-base leading-tight">
             En dehors de mes sessions de codage, j&apos;aime me détendre grâce à
-            la <strong>lecture</strong> 📖 et aux <strong>jeux vidéos</strong>{" "}
-            🕹️, plonger dans un monde fictif me permet de cultiver ma
-            créativité.
+            la <strong>lecture</strong> 📖 et aux{" "}
+            <strong>jeux vidéos 🕹️</strong>.
+            <br />
+            Plonger dans un monde fictif me permet de cultiver ma créativité.
           </span>
           <span className="mt-6">
             Le <strong>sport</strong> ⚽ a une place essentielle dans ma vie,
