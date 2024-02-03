@@ -3,6 +3,7 @@
 import { RevealWrapper } from "next-reveal";
 import { Ubuntu } from "@next/font/google";
 import JourneyBlock from "@/components/JourneyBlock";
+import JourneyTest from "@/components/JourneyTest";
 
 const ubuntu = Ubuntu({
   subsets: ["latin"],
@@ -30,7 +31,15 @@ export default function Journey() {
         </h1>
       </RevealWrapper>
       <RevealWrapper delay={100}>
-        <JourneyBlock
+        <JourneyTest
+          title="titre"
+          text={fakeText}
+          date="2024"
+          delay={150}
+          right={true}
+          rounded="rounded-t-full"
+        />
+        {/* <JourneyBlock
           title="titre"
           text={fakeText}
           date="2024"
@@ -59,7 +68,7 @@ export default function Journey() {
           delay={450}
           right={true}
           rounded="rounded-b-full"
-        />
+        /> */}
       </RevealWrapper>
     </div>
   );

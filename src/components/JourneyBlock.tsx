@@ -19,8 +19,9 @@ export default function JourneyBlock(props: {
       reset={false}
     >
       <div className="grid grid-cols-[1fr_20px_5px_20px_1fr] gap-10">
+        {/* text block */}
         <div
-          className={`flex flex-col w-full bg-blue-100/25 dark:bg-slate-700/50 border border-blue-500/10 dark:border-white/10 shadow-md h-full rounded-md p-2 ${
+          className={`flex flex-col w-full hover:scale-105 transition-all bg-blue-100/25 dark:bg-slate-700/50 border border-blue-500/10 dark:border-white/10 shadow-md h-full rounded-md p-2 ${
             props.right ? "opacity-0" : "opacity-100"
           }`}
         >
@@ -32,13 +33,15 @@ export default function JourneyBlock(props: {
         <span className="self-center text-xs">
           {props.right ? "" : props.date}
         </span>
+        {/* line */}
         <div
           className={
-            "w-full bg-blue-500 h-full flex flex-col justify-center items-center " +
+            "w-full bg-blue-500/60 h-full flex flex-col justify-center items-center " +
             props.rounded
           }
         >
-          <span className="w-3 h-3 rounded-full border-blue-500 border-4 bg-white dark:bg-slate-800 self-center justify-self-center"></span>
+          {/* circle */}
+          <span className="w-3 h-3 rounded-full border-blue-500 border-4 bg-white dark:bg-slate-800 self-center justify-self-center shadow-sm"></span>
         </div>
         <span className="self-center text-xs">
           {props.right ? props.date : ""}
