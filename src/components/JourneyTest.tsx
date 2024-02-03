@@ -4,6 +4,7 @@ import { RevealWrapper } from "next-reveal";
 
 export default function JourneyTest(props: {
   title: string;
+  org?: string;
   text: string;
   right: boolean;
   delay: number;
@@ -42,9 +43,10 @@ export default function JourneyTest(props: {
             "flex flex-col w-full transition-all bg-blue-100/25 dark:bg-slate-700/50 border border-blue-500/10 dark:border-white/10 shadow-md h-full rounded-md p-2 group-hover:dark:border-blue-500/50"
           }
         >
-          <span className="self-center font-semibold capitalize mb-2">
-            {props.title}
-          </span>
+          <div className="flex items-center gap-1 font-semibold mt-4 mb-4">
+            <span className="text-blue-400">{props.title}</span>
+            <span className="font-light text-sm">- {props.org}</span>
+          </div>
           <p className="text-sm">{props.text}</p>
         </div>
       </div>

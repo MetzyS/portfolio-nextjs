@@ -32,7 +32,8 @@ export default function Journey() {
       </RevealWrapper>
       <RevealWrapper delay={100}>
         <JourneyTest
-          title="titre"
+          title="Développeur Web Full Stack"
+          org="L'Univers du Téléphone"
           text={fakeText}
           date="2024"
           delay={150}
