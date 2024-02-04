@@ -30,7 +30,7 @@ export const NavBar = () => {
   return (
     <header className="w-full">
       <nav
-        className={`fixed bg-white dark:bg-slate-800 w-full h-13 flex p-1 border-0 border-b border-b-slate-200 dark:border-b-slate-600 z-20 ${
+        className={`fixed bg-white/20 backdrop-blur-xl dark:bg-slate-800/20 w-full h-13 flex p-1 border-0 border-b border-b-slate-200 dark:border-b-slate-600 z-20 ${
           menu ? "" : "justify-between"
         }`}
       >

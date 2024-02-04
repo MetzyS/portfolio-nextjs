@@ -62,7 +62,7 @@ export default function Journey() {
           // ]}
         />
         <JourneyBlock
-          delay={230}
+          delay={150}
           date="2023 — 2024"
           title="Développeur Web — Full Stack"
           link="https://www.universdutelephone.fr"
