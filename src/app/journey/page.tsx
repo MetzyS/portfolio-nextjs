@@ -30,7 +30,7 @@ export default function Journey() {
       <RevealWrapper delay={100}>
         <JourneyBlock
           delay={130}
-          date="2023 — 2024"
+          date="2023 — Aujourd'hui"
           title="Développeur Web — Full Stack"
           link="https://www.universdutelephone.fr"
           links={[
@@ -45,7 +45,7 @@ export default function Journey() {
           ]}
           level="Développeur Junior"
           text="Planification, conception, développement, déploiement et maintenance de deux projets: <ul><li>- Un site vitrine avec formulaire de contact et backend permettant de consulter/répondre aux messages laissé par les visiteurs.<li><li>- Une application web permettant le stockage/partage de fichiers avec différents accès selon le rôle attribué aux utilisateurs.</li></ul>"
-          tech={["JavaScript", "PHP", "HTML & CSS"]}
+          tech={["PHP", "JavaScript", "HTML & CSS", "Figma", "Illustrator"]}
           // tech={[
           //   {
           //     tech: "JavaScript",
@@ -62,7 +62,7 @@ export default function Journey() {
           // ]}
         />
         <JourneyBlock
-          delay={130}
+          delay={230}
           date="2023 — 2024"
           title="Développeur Web — Full Stack"
           link="https://www.universdutelephone.fr"
