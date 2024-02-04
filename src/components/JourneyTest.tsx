@@ -43,7 +43,7 @@ export default function JourneyTest(props: {
             "flex flex-col w-full transition-all bg-blue-100/25 dark:bg-slate-700/50 border border-blue-500/10 dark:border-white/10 shadow-md h-full rounded-md p-2 group-hover:dark:border-blue-500/50"
           }
         >
-          <div className="flex items-center gap-1 font-semibold mt-4 mb-4">
+          <div className="flex flex-col gap-1 font-semibold mt-4 mb-6">
             <span className="text-blue-400">{props.title}</span>
             <span className="font-light text-sm">- {props.org}</span>
           </div>

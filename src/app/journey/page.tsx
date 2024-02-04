@@ -3,15 +3,12 @@
 import { RevealWrapper } from "next-reveal";
 import { Ubuntu } from "@next/font/google";
 import JourneyBlock from "@/components/JourneyBlock";
-import JourneyTest from "@/components/JourneyTest";
 
 const ubuntu = Ubuntu({
   subsets: ["latin"],
   weight: ["300", "400", "500", "700"],
 });
 export default function Journey() {
-  const fakeText =
-    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, ipsam perferendis doloribus accusamus, nihil impedit ipsum aut totam similique veniam maiores mollitia nam quaerat aliquid! Eos tenetur deserunt ratione nobis. Assumenda nostrum dolore officiis deserunt et excepturi harum error voluptates, eos esse, cupiditate rerum saepe porro, eveniet ad quod culpa. Officia repellat itaque rerum quidem voluptatem animi minima corporis fugit!";
   return (
     <div className="flex flex-col gap-10 my-20 xs:my-24 mx-6">
       <RevealWrapper
@@ -31,45 +28,34 @@ export default function Journey() {
         </h1>
       </RevealWrapper>
       <RevealWrapper delay={100}>
-        <JourneyTest
-          title="Développeur Web Full Stack"
-          org="L'Univers du Téléphone"
-          text={fakeText}
-          date="2024"
-          delay={150}
-          right={true}
-          rounded="rounded-t-full"
-        />
-        {/* <JourneyBlock
-          title="titre"
-          text={fakeText}
-          date="2024"
-          delay={150}
-          right={false}
-          rounded="rounded-t-full"
+        <JourneyBlock
+          delay={130}
+          date="2023 — 2024"
+          title="Développeur Web — Full Stack"
+          link="https://www.universdutelephone.fr"
+          links={[
+            {
+              title: "Site vitrine",
+              link: "https://www.universdutelephone.fr",
+            },
+            {
+              title: "Plateforme partage",
+              link: "https://www.metzys.net/projet-cloud/",
+            },
+          ]}
+          level="Développeur Junior"
+          text="Planification, conception, développement, déploiement et maintenance de deux projets: <ul><li>- Un site vitrine avec formulaire de contact et backend permettant de consulter/répondre aux messages laissé par les visiteurs.<li><li>- Une application web permettant le stockage/partage de fichiers avec différents accès selon le rôle attribué aux utilisateurs.</li></ul>"
+          tech={["JavaScript", "PHP", "HTML & CSS"]}
         />
         <JourneyBlock
-          title="titre"
-          text={fakeText}
-          date="2024"
-          delay={250}
-          right={true}
+          delay={130}
+          date="2023 — 2024"
+          title="Développeur Web — Full Stack"
+          link="https://www.universdutelephone.fr"
+          level="Développeur Junior"
+          text="Planification, conception, développement, déploiement et maintenance de deux projets: <ul><li>- Un site vitrine avec formulaire de contact et backend permettant de consulter/répondre aux messages laissé par les visiteurs.<li><li>- Une application web permettant le stockage/partage de fichiers avec différents accès selon le rôle attribué aux utilisateurs.</li></ul>"
+          tech={["JavaScript", "PHP", "HTML & CSS"]}
         />
-        <JourneyBlock
-          title="titre"
-          text={fakeText}
-          date="2024"
-          delay={350}
-          right={false}
-        />
-        <JourneyBlock
-          title="titre"
-          text={fakeText}
-          date="2024"
-          delay={450}
-          right={true}
-          rounded="rounded-b-full"
-        /> */}
       </RevealWrapper>
     </div>
   );
