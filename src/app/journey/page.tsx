@@ -46,6 +46,20 @@ export default function Journey() {
           level="Développeur Junior"
           text="Planification, conception, développement, déploiement et maintenance de deux projets: <ul><li>- Un site vitrine avec formulaire de contact et backend permettant de consulter/répondre aux messages laissé par les visiteurs.<li><li>- Une application web permettant le stockage/partage de fichiers avec différents accès selon le rôle attribué aux utilisateurs.</li></ul>"
           tech={["JavaScript", "PHP", "HTML & CSS"]}
+          // tech={[
+          //   {
+          //     tech: "JavaScript",
+          //     className: "text-black bg-yellow-400",
+          //   },
+          //   {
+          //     tech: "PHP",
+          //     className: "text-black bg-purple-400",
+          //   },
+          //   {
+          //     tech: "HTML & CSS",
+          //     className: "text-black bg-orange-400",
+          //   },
+          // ]}
         />
         <JourneyBlock
           delay={130}
@@ -54,7 +68,7 @@ export default function Journey() {
           link="https://www.universdutelephone.fr"
           level="Développeur Junior"
           text="Planification, conception, développement, déploiement et maintenance de deux projets: <ul><li>- Un site vitrine avec formulaire de contact et backend permettant de consulter/répondre aux messages laissé par les visiteurs.<li><li>- Une application web permettant le stockage/partage de fichiers avec différents accès selon le rôle attribué aux utilisateurs.</li></ul>"
-          tech={["JavaScript", "PHP", "HTML & CSS"]}
+          // tech={["JavaScript", "PHP", "HTML & CSS"]}
         />
       </RevealWrapper>
     </div>

@@ -11,6 +11,7 @@ export default function JourneyBlock(props: {
   delay: number;
   date: string;
   tech?: string[];
+  // tech?: { tech: string; className: string }[];
   links?: { title: string; link: string }[];
 }) {
   return (
@@ -54,7 +55,7 @@ export default function JourneyBlock(props: {
             <div className="group font-medium text-sm">
               <a
                 href={link.link}
-                className="flex items-center group-hover:text-teal-300"
+                className="flex items-center group-hover:text-blue-600 group-hover:dark:text-teal-300"
               >
                 <IoIosLink className="w-3 h-3 mr-1" />
                 {link.title}
@@ -63,6 +64,21 @@ export default function JourneyBlock(props: {
           ))}
         </ul>
       )}
+      {/* {props.tech && (
+        <ul className="mt-2 flex flex-wrap" aria-label="stack utilisé">
+          {props.tech.map((stack, index) => (
+            <li
+              key={"stack-" + index}
+              className={
+                "flex items-center px-3 py-1 leading-5 text-xs font-medium rounded-full mr-1.5 mt-2 " +
+                stack.className
+              }
+            >
+              {stack.tech}
+            </li>
+          ))}
+        </ul>
+      )} */}
       {props.tech && (
         <ul className="mt-2 flex flex-wrap" aria-label="stack utilisé">
           {props.tech.map((stack, index) => (
