@@ -26,7 +26,7 @@ export const NavLink = (props: {
         <Image src={props.image} width={35} height={35} alt="Logo" />
       )}
       {props.icon && (
-        <span>
+        <span className="hidden md:block">
           <props.icon className={props.iconClass} />
         </span>
       )}

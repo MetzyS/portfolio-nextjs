@@ -45,10 +45,10 @@ export default function JourneyBlock(props: {
           </span>
         )}
       </h3>
-      <div
+      <p
         className="text-sm leading-normal text-slate-700 dark:text-slate-400 mt-2"
         dangerouslySetInnerHTML={{ __html: props.text }}
-      ></div>
+      ></p>
       {props.links && (
         <ul className="flex gap-4 mt-4">
           {props.links.map((link, index) => (

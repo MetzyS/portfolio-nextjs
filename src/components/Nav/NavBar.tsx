@@ -29,8 +29,12 @@ export const NavBar = () => {
   const { menu, toggleMenu, closeMenu } = useMenu();
   return (
     <header className="w-full">
-      <nav className="fixed bg-white dark:bg-slate-800 w-full h-13 grid grid-cols-3 p-1 border-0 border-b border-b-slate-200 dark:border-b-slate-600 z-20">
-        <div className="flex gap-3 items-center w-max">
+      <nav
+        className={`fixed bg-white dark:bg-slate-800 w-full h-13 flex p-1 border-0 border-b border-b-slate-200 dark:border-b-slate-600 z-20 ${
+          menu ? "" : "justify-between"
+        }`}
+      >
+        <div className="flex items-center w-max gap-3">
           <MenuBtn />
           {!menu && (
             <Link href="/" className="group">
@@ -42,39 +46,41 @@ export const NavBar = () => {
             </Link>
           )}
         </div>
-        <div className="flex col-start-2 justify-center items-center">
-          <div
-            className={`ml-5 md:ml-0 flex items-center w-max ${
-              menu ? "opacity-100" : "opacity-0"
-            } transition-all`}
-          >
-            <NavLink
-              text={"Accueil"}
-              path="/"
-              icon={IoHomeOutline}
-              className="text-xs md:text-sm lg:text-base transition-all"
-            />
-            <span className="w-0 h-5 border-0 border-r border-slate-300 dark:border-slate-700"></span>
-            <NavLink
-              text={"A propos"}
-              path="about"
-              icon={AiOutlineQuestionCircle}
-              className="text-xs md:text-sm lg:text-base transition-all"
-            />
-            <span className="w-0 h-5 border-0 border-r border-slate-300 dark:border-slate-700"></span>
-            <NavLink
-              text={"Parcours"}
-              path="journey"
-              icon={PiPathFill}
-              className="text-xs md:text-sm lg:text-base transition-all"
-            />
-            <span className="w-0 h-5 border-0 border-r border-slate-300 dark:border-slate-700"></span>
-            <NavLink
-              text={"Projets"}
-              path="/"
-              icon={HiCodeBracket}
-              className="text-xs md:text-sm lg:text-base transition-all"
-            />
+        <div className={menu ? "flex opacity-100 m-auto" : "hidden opacity-0"}>
+          <div className="flex justify-center items-center">
+            <div
+              className={`md:ml-0 flex items-center w-max ${
+                menu ? "opacity-100" : "opacity-0"
+              } transition-all`}
+            >
+              <NavLink
+                text={"Accueil"}
+                path="/"
+                icon={IoHomeOutline}
+                className="text-xs md:text-sm lg:text-base transition-all"
+              />
+              <span className="w-0 h-5 border-0 border-r border-slate-300 dark:border-slate-700"></span>
+              <NavLink
+                text={"A propos"}
+                path="about"
+                icon={AiOutlineQuestionCircle}
+                className="text-xs md:text-sm lg:text-base transition-all"
+              />
+              <span className="w-0 h-5 border-0 border-r border-slate-300 dark:border-slate-700"></span>
+              <NavLink
+                text={"Parcours"}
+                path="journey"
+                icon={PiPathFill}
+                className="text-xs md:text-sm lg:text-base transition-all"
+              />
+              <span className="w-0 h-5 border-0 border-r border-slate-300 dark:border-slate-700"></span>
+              <NavLink
+                text={"Projets"}
+                path="/"
+                icon={HiCodeBracket}
+                className="text-xs md:text-sm lg:text-base transition-all"
+              />
+            </div>
           </div>
         </div>
         <div
