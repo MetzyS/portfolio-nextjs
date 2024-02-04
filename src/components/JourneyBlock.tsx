@@ -52,10 +52,11 @@ export default function JourneyBlock(props: {
       {props.links && (
         <ul className="flex gap-4 mt-4">
           {props.links.map((link, index) => (
-            <div className="group font-medium text-sm">
+            <div className="group font-medium text-sm" key={"linkdiv-" + index}>
               <a
                 href={link.link}
                 className="flex items-center group-hover:text-blue-600 group-hover:dark:text-teal-300"
+                key={"link-" + index}
               >
                 <IoIosLink className="w-3 h-3 mr-1" />
                 {link.title}
