@@ -3,6 +3,7 @@ import { DefaultBtn } from "@/components/DefaultBtn";
 import { Inconsolata, Ubuntu } from "@next/font/google";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { BsChevronDoubleDown } from "react-icons/bs";
+import Link from "next/link";
 
 const ubuntu = Ubuntu({
   subsets: ["latin"],
@@ -22,10 +23,10 @@ export const MainDescription = () => {
         ubuntu.className
       }
     >
-      <div className="absolute bottom-20 right-10 md:right-20 lg:bottom-16 lg:right-16 xl:bottom-20 xl:right-20 p-2 rounded-full hover:bg-slate-200 hover:dark:bg-slate-700 animate-bounce cursor-pointer transition-all">
-        <a href="#about-section">
-          <BsChevronDoubleDown className="w-5 h-5" />
-        </a>
+      <div className="absolute bottom-20 right-10 md:right-20 lg:bottom-16 lg:right-16 xl:bottom-20 xl:right-20 p-2 rounded-full hover:bg-slate-200 hover:dark:bg-slate-700 animate-pulse cursor-pointer transition-all">
+        <Link href="about">
+          <BsChevronDoubleDown className="w-5 h-5 -rotate-90" />
+        </Link>
       </div>
       <DecorationTag text="<html>" className="text-sm lg:text-lg xl:text-xl " />
       <DecorationTag

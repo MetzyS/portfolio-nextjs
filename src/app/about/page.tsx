@@ -6,6 +6,8 @@ import { AvatarHappy } from "@/components/Avatars/AvatarHappy";
 import { AvatarTired } from "@/components/Avatars/AvatarTired";
 import { Ubuntu } from "@next/font/google";
 import { RevealWrapper } from "next-reveal";
+import Link from "next/link";
+import { BsChevronDoubleDown } from "react-icons/bs";
 
 const ubuntu = Ubuntu({
   subsets: ["latin"],
@@ -142,6 +144,16 @@ export default function About() {
               soit physique ou mental.
             </span>
           </p>
+        </div>
+        <div className="absolute -bottom-16 left-0 md:left-20 lg:-bottom-10 lg:left-16 xl:-bottom-10 xl:left-20 p-2 rounded-full hover:bg-slate-200 hover:dark:bg-slate-700 animate-pulse cursor-pointer transition-all">
+          <Link href="/">
+            <BsChevronDoubleDown className="w-5 h-5 rotate-90" />
+          </Link>
+        </div>
+        <div className="absolute -bottom-16 right-0 md:right-20 lg:-bottom-10 lg:right-16 xl:-bottom-10 xl:right-20 p-2 rounded-full hover:bg-slate-200 hover:dark:bg-slate-700 animate-pulse cursor-pointer transition-all">
+          <Link href="journey">
+            <BsChevronDoubleDown className="w-5 h-5 -rotate-90" />
+          </Link>
         </div>
       </RevealWrapper>
     </div>

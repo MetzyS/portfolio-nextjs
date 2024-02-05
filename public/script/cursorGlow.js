@@ -28,6 +28,6 @@ setInterval(() => {
       xp +
       "px " +
       yp +
-      "px, rgba(0,0,0,0), transparent 0%)";
+      "px, rgba(163,178,233,0.15), transparent 80%)";
   }
 });
