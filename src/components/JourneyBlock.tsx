@@ -8,7 +8,8 @@ export default function JourneyBlock(props: {
   link?: string;
   detail?: string;
   company?: string;
-  text: string;
+  text?: string;
+  htmlDom?: string | TrustedHTML;
   delay: number;
   date: string;
   tech?: string[];
@@ -55,10 +56,17 @@ export default function JourneyBlock(props: {
               )}
             </div>
           </h3>
-          <p
-            className="text-sm leading-normal text-slate-700 dark:text-slate-400 mt-2"
-            dangerouslySetInnerHTML={{ __html: props.text }}
-          ></p>
+          {props.text && (
+            <p className="text-sm leading-normal text-slate-700 dark:text-slate-400 mt-2">
+              {props.text}
+            </p>
+          )}
+          {props.htmlDom && (
+            <p
+              className="text-sm leading-normal text-slate-700 dark:text-slate-400 mt-2"
+              dangerouslySetInnerHTML={{ __html: props.htmlDom }}
+            ></p>
+          )}
           {props.links && (
             <ul className="flex gap-4 mt-4">
               {props.links.map((link, index) => (
