@@ -22,8 +22,8 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="scroll-smooth sr" suppressHydrationWarning>
-      <body className="dark:bg-slate-800 relative">
-        <div className="hidden md:block cursor w-full h-full pointer-events-none fixed inset-0 z-0 transition duration-300 lg:absolute"></div>
+      <body className="bg-zinc-50/60 dark:bg-slate-800 relative">
+        <div className="hidden lg:block cursor w-full h-full pointer-events-none fixed inset-0 z-0 transition duration-300 lg:absolute"></div>
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           <NavBar />
           <main className="flex flex-col pt-12 xs:pt-0 md:max-w-[768px] md:m-auto xl:grid-cols-6 xl:max-w-[1024px] xl:m-auto lg:m-auto">

@@ -6,7 +6,8 @@ import { RevealWrapper } from "next-reveal";
 export default function JourneyBlock(props: {
   title: string;
   link?: string;
-  level?: string;
+  detail?: string;
+  company?: string;
   text: string;
   delay: number;
   date: string;
@@ -17,7 +18,7 @@ export default function JourneyBlock(props: {
   return (
     <RevealWrapper
       delay={props.delay}
-      className="w-full group/item load-hidden cursor-pointer"
+      className="w-full group/item load-hidden"
       useDelay="always"
       opacity={0}
       reset={false}
@@ -42,9 +43,14 @@ export default function JourneyBlock(props: {
                   {props.title}
                 </span>
               )}
-              {props.level && (
+              {props.detail && (
                 <span className="font-medium leading-snug text-slate-500">
-                  {props.level}
+                  {props.detail}
+                </span>
+              )}
+              {props.company && (
+                <span className="font-medium leading-snug text-slate-500">
+                  {props.company}
                 </span>
               )}
             </div>
