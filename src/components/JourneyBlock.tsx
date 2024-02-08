@@ -40,7 +40,7 @@ export default function JourneyBlock(props: {
                   <LiaExternalLinkAltSolid className="w-4 h-4" />
                 </a>
               ) : (
-                <span className="font-medium leading-snug text-slate-900 dark:text-slate-200">
+                <span className="font-medium leading-snug text-slate-900 dark:text-slate-200 dark:hover:text-sky-300 hover:text-blue-600 group-hover/item:text-blue-600 group-hover/item:dark:text-sky-300">
                   {props.title}
                 </span>
               )}
@@ -70,7 +70,7 @@ export default function JourneyBlock(props: {
           {props.links && (
             <ul className="flex gap-4 mt-4">
               {props.links.map((link, index) => (
-                <div
+                <li
                   className="group font-medium text-sm"
                   key={"linkdiv-" + index}
                 >
@@ -82,7 +82,7 @@ export default function JourneyBlock(props: {
                     <IoIosLink className="w-3 h-3 mr-1" />
                     {link.title}
                   </a>
-                </div>
+                </li>
               ))}
             </ul>
           )}
