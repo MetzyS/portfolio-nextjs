@@ -13,7 +13,6 @@ export default function JourneyBlock(props: {
   delay: number;
   date: string;
   tech?: string[];
-  // tech?: { tech: string; className: string }[];
   links?: { title: string; link: string }[];
 }) {
   return (

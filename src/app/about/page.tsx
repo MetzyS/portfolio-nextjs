@@ -6,8 +6,6 @@ import { AvatarHappy } from "@/components/Avatars/AvatarHappy";
 import { AvatarTired } from "@/components/Avatars/AvatarTired";
 import { Ubuntu } from "@next/font/google";
 import { RevealWrapper } from "next-reveal";
-import Link from "next/link";
-import { BsChevronDoubleDown } from "react-icons/bs";
 
 const ubuntu = Ubuntu({
   subsets: ["latin"],

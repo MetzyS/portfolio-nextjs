@@ -4,8 +4,6 @@ import { RevealWrapper } from "next-reveal";
 import { Ubuntu } from "@next/font/google";
 import JourneyBlock from "@/components/JourneyBlock";
 import NoSsr from "@/utils/NoSsr";
-import Link from "next/link";
-import { BsChevronDoubleDown } from "react-icons/bs";
 
 const ubuntu = Ubuntu({
   subsets: ["latin"],

@@ -1,5 +1,3 @@
-import CSS from "csstype";
-
 export const MetzysLogo = (props: {
   fill?: string;
   width: number;
