@@ -62,21 +62,21 @@ export const NavBar = () => {
               <span className="w-0 h-5 border-0 border-r border-slate-300 dark:border-slate-700"></span>
               <NavLink
                 text={"A propos"}
-                path="about"
+                path="#about"
                 icon={AiOutlineQuestionCircle}
                 className="text-xs md:text-sm lg:text-base transition-all"
               />
               <span className="w-0 h-5 border-0 border-r border-slate-300 dark:border-slate-700"></span>
               <NavLink
                 text={"Parcours"}
-                path="journey"
+                path="#parcours"
                 icon={PiPathFill}
                 className="text-xs md:text-sm lg:text-base transition-all"
               />
               <span className="w-0 h-5 border-0 border-r border-slate-300 dark:border-slate-700"></span>
               <NavLink
                 text={"Projets"}
-                path="/"
+                path="#projets"
                 icon={HiCodeBracket}
                 className="text-xs md:text-sm lg:text-base transition-all"
               />

@@ -24,8 +24,8 @@ export const MainDescription = () => {
       }
     >
       <div className="absolute bottom-20 right-10 md:right-20 lg:bottom-16 lg:right-16 xl:bottom-20 xl:right-20 p-2 rounded-full hover:bg-slate-200 hover:dark:bg-slate-700 animate-pulse cursor-pointer transition-all">
-        <Link href="about">
-          <BsChevronDoubleDown className="w-5 h-5 -rotate-90" />
+        <Link href="#about">
+          <BsChevronDoubleDown className="w-5 h-5" />
         </Link>
       </div>
       <DecorationTag text="<html>" className="text-sm lg:text-lg xl:text-xl " />
