@@ -21,6 +21,6 @@ setInterval(() => {
   if (html.classList.contains("dark")) {
     cursor.style.background = `radial-gradient(400px at ${xp}px ${yp}px, rgba(23,62,172,0.15), transparent 80%)`;
   } else {
-    cursor.style.background = `radial-gradient(400px at ${xp}px ${yp}px, rgba(163,178,233,0.15), transparent 80%)`;
+    cursor.style.background = ``;
   }
 });
