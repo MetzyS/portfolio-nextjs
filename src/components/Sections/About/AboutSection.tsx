@@ -6,6 +6,7 @@ import { AvatarHappy } from "@/components/Avatars/AvatarHappy";
 import { AvatarTired } from "@/components/Avatars/AvatarTired";
 import { Ubuntu } from "@next/font/google";
 import { RevealWrapper } from "next-reveal";
+import { about } from "@/app/data/data";
 
 const ubuntu = Ubuntu({
   subsets: ["latin"],
@@ -14,24 +15,15 @@ const ubuntu = Ubuntu({
 
 export default function AboutSection() {
   return (
-    <section id="about">
-      <div className="flex flex-col gap-10 my-20 xs:my-24 mx-6">
-        <RevealWrapper
-          delay={0}
-          useDelay="always"
-          opacity={0}
-          reset={false}
-          className="load-hidden"
-        >
-          <h1
-            className={
-              "text-xl xl:text-4xl md:text-3xl font-bold text-slate-800 dark:text-slate-100 drop-shadow-xl mb-10 text-center " +
-              ubuntu.className
-            }
-          >
+    <section id="about" className="pt-20">
+      <div className="sticky sm:static top-12 left-0 right-0 -m-6 w-screen sm:w-max bg-zinc-50/60 dark:bg-slate-800/50 lg:bg-transparent lg:dark:bg-transparent z-20 sm:z-0 backdrop-blur flex pl-6  py-5 sm:pl-12">
+        <div className="text-slate-800 dark:text-slate-200 w-full">
+          <h1 className="text-2xl md:text-4xl lg:text-4xl font-bold flex gap-6 items-center">
             Qui suis-je ? ✍🏼
           </h1>
-        </RevealWrapper>
+        </div>
+      </div>
+      <div className="flex flex-col gap-10 my-20 xs:my-24 mx-6">
         <RevealWrapper
           delay={150}
           useDelay="always"
@@ -41,33 +33,7 @@ export default function AboutSection() {
         >
           <div className="flex flex-col gap-6 md:grid md:grid-cols-2 md:gap-5 md:gap-y-28">
             <p className="relative flex flex-col text-base leading-tight text-slate-800 dark:text-slate-300 dark:bg-slate-700/30 bg-indigo-200/20 rounded-lg p-4 md:p-5 shadow-xl shadow-slate-600/20 dark:shadow-slate-900/40 md:shadow-md overflow-hidden">
-              <span className="mb-2 md:mb-0 text-base leading-tight">
-                <strong>Ancien directeur d&apos;ACM*</strong> avec plusieurs
-                années d&apos;expérience dans le monde de l&apos;animation
-                socio-culturelle.
-              </span>
-              <span className="text-xs italic">
-                *Accueil collectif de Mineurs.
-              </span>
-              <span className="mt-6">
-                J&apos;ai entammé une{" "}
-                <strong>
-                  reconversion professionnelle dans le développement web{" "}
-                </strong>
-                en 2022, en raison de ma passion pour l&apos;informatique, le
-                code 👨🏽‍💻 et les jeux vidéo 🎮.
-              </span>
-              <span className="mt-6">
-                Depuis, je passe mes journées{" "}
-                <span className="text-sm italic">(et parfois mes nuits!)</span>{" "}
-                a<strong> coder</strong>, <strong>apprendre et explorer</strong>{" "}
-                cette nouvelle facette d&apos;internet.
-              </span>
-              <span className="mt-6">
-                C&apos;est d&apos;ailleurs ce qui me motive le plus.. l&apos;
-                <strong>apprentissage</strong>! Le renouvellement et la remise
-                en question permanente dans un domaine qui évolue sans cesse.
-              </span>
+              {about}
             </p>
             <RevealWrapper
               delay={250}
@@ -78,29 +44,29 @@ export default function AboutSection() {
             >
               <div className="relative hidden md:block">
                 <AvatarTired
-                  width={200}
-                  height={200}
+                  width={180}
+                  height={180}
                   className="absolute left-10 xl:left-4"
                 />
                 <AvatarCloud
                   width={80}
                   height={80}
-                  className="absolute right-12 top-16 xl:left-52 z-20"
+                  className="absolute right-12 top-10 xl:left-52 z-20"
                   text="Avant"
                   textClass="font-mono text-9xl font-semibold text-black"
                 />
                 <div className="md:absolute top-40 right-16  xl:top-16 xl:right-44 md:block hidden">
-                  <AvatarArrow className="rotate-[125deg] xl:rotate-[105deg] w-[140px] h-[100px] xl:w-[95px] xl:h-[220px] dark:fill-white" />
+                  <AvatarArrow className="rotate-[125deg] xl:rotate-[105deg] w-[140px] h-[100px] xl:w-[95px] xl:h-[220px] dark:fill-slate-400 -top-8 right-2 xl:-top-2 xl:right-4 absolute" />
                 </div>
                 <AvatarHappy
-                  width={180}
-                  height={180}
-                  className="absolute top-56 xl:top-36 right-6 xl:right-0"
+                  width={160}
+                  height={160}
+                  className="absolute top-44 xl:top-28 right-6 xl:right-0"
                 />
                 <AvatarCloud
                   width={80}
                   height={80}
-                  className="absolute md:left-20 xl:left-44 top-64 xl:top-52 z-20"
+                  className="absolute md:left-20 xl:left-44 top-56 xl:top-52 z-20"
                   text="Après"
                   textClass="font-mono text-9xl font-semibold text-black"
                 />

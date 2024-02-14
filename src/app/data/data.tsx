@@ -1,3 +1,27 @@
+import { ReactElement } from "react";
+
+export const about: ReactElement = (
+  <>
+    <span className="mb-2 md:mb-0 text-base leading-tight">
+      <strong>Ancien directeur d&apos;ACM*</strong> avec plusieurs années
+      d&apos;expérience dans le monde de l&apos;animation socio-culturelle.
+    </span>
+    <span className="text-xs italic">*Accueil collectif de Mineurs.</span>
+    <span className="mt-6">
+      J&apos;ai entammé une{" "}
+      <strong>reconversion professionnelle dans le développement web</strong> en
+      2022, en raison de ma passion pour l&apos;informatique, le code 👨🏽‍💻 et les
+      jeux vidéo 🎮.
+    </span>
+    <span className="mt-6">
+      Depuis, je passe mes journées{" "}
+      <span className="text-sm italic">(et parfois mes nuits!)</span> a
+      <strong> coder</strong>, <strong>apprendre et explorer</strong> cette
+      nouvelle facette d&apos;internet.
+    </span>
+  </>
+);
+
 export const expPro = [
   {
     id: 1,

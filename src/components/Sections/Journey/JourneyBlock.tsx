@@ -12,11 +12,10 @@ export default function JourneyBlock(props: {
   delay: number;
   date: string;
   tech?: string[];
-  visible: boolean;
   links?: { title: string; link: string }[];
 }) {
   return (
-    <div className={`w-full group/item ${props.visible ? "block" : "hidden"}`}>
+    <div className="w-full group/item block">
       <div className="flex flex-col sm:grid sm:grid-cols-[150px_1fr] mb-12 sm:p-6 lg:hover:bg-blue-500/5 lg:hover:dark:bg-sky-300/5 lg:rounded-lg border-transparent border-t lg:hover:border-t-blue-100/50 lg:hover:dark:border-t-white/10 lg:hover:shadow-lg lg:hover:shadow-blue-800/5 lg:dark:hover:shadow-black/5">
         <span className="text-slate-500 font-semibold text-xs my-2">
           {props.date}
