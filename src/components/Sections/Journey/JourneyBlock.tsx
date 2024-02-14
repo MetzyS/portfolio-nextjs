@@ -27,10 +27,15 @@ export default function JourneyBlock(props: {
               {props.link ? (
                 <a
                   href={props.link}
-                  className="flex gap-2 items-center justify-start font-medium leading-snug text-slate-900 dark:text-slate-200 dark:hover:text-sky-300 hover:text-blue-600 group-hover/item:text-blue-600 group-hover/item:dark:text-sky-300"
+                  target="_blank"
+                  className="inline-flex font-medium leading-snug text-slate-900 dark:text-slate-200 dark:hover:text-sky-300 hover:text-blue-600 group-hover/item:text-blue-600 group-hover/item:dark:text-sky-300"
                 >
-                  {props.title}
-                  <LiaExternalLinkAltSolid className="w-4 h-4" />
+                  <span className="">
+                    {props.title}{" "}
+                    <span className="inline-block ml-2 align-text-bottom">
+                      <LiaExternalLinkAltSolid className="w-5 h-5" />
+                    </span>
+                  </span>
                 </a>
               ) : (
                 <span className="font-medium leading-snug text-slate-900 dark:text-slate-200 dark:hover:text-sky-300 hover:text-blue-600 group-hover/item:text-blue-600 group-hover/item:dark:text-sky-300">

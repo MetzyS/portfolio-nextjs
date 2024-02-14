@@ -14,16 +14,16 @@ const ubuntu = Ubuntu({
 });
 
 export default function JourneySection() {
-  const [openExpList, setOpenExpList] = useState(false);
-  const [openFormationList, setOpenFormationList] = useState(false);
+  // const [openExpList, setOpenExpList] = useState(false);
+  // const [openFormationList, setOpenFormationList] = useState(false);
 
-  const handleOpenExpList = () => {
-    setOpenExpList(!openExpList);
-  };
+  // const handleOpenExpList = () => {
+  //   setOpenExpList(!openExpList);
+  // };
 
-  const handleOpenFormationList = () => {
-    setOpenFormationList(!openFormationList);
-  };
+  // const handleOpenFormationList = () => {
+  //   setOpenFormationList(!openFormationList);
+  // };
 
   return (
     <NoSsr>
@@ -45,29 +45,31 @@ export default function JourneySection() {
               Parcours ⌛
             </h1>
             <div
-              className={`${
-                openExpList ? "sticky" : "static"
-              } sm:static top-12 left-0 right-0 -m-6 w-screen sm:w-max bg-zinc-50/60 dark:bg-slate-800/50 lg:bg-transparent lg:dark:bg-transparent z-20 sm:z-0 backdrop-blur flex pl-6  py-5 sm:pl-12`}
+              className="sticky sm:static top-12 left-0 right-0 -m-6 w-screen sm:w-max bg-zinc-50/60 dark:bg-slate-800/50 lg:bg-transparent lg:dark:bg-transparent z-20 sm:z-0 backdrop-blur flex pl-6  py-5 sm:pl-12"
+              // className={`${
+              //   openExpList ? "sticky" : "static"
+              // } sm:static top-12 left-0 right-0 -m-6 w-screen sm:w-max bg-zinc-50/60 dark:bg-slate-800/50 lg:bg-transparent lg:dark:bg-transparent z-20 sm:z-0 backdrop-blur flex pl-6  py-5 sm:pl-12`}
             >
               <div className="text-slate-800 dark:text-slate-200 w-full">
                 <span
                   className="text-base font-bold lg:text-lg flex gap-6 items-center hover:text-sky-300 cursor-pointer"
-                  onClick={handleOpenExpList}
+                  // onClick={handleOpenExpList}
                 >
                   Expérience Professionnelle
-                  <span>
+                  {/* <span>
                     <MdOutlineExpandMore className="w-5 h-5" />
-                  </span>
+                  </span> */}
                 </span>
               </div>
             </div>
             {expPro.map((exp) => {
               return (
                 <li
-                  className={`list-none ${openExpList ? "" : "hidden"}`}
+                  className="list-none"
+                  // className={`list-none ${openExpList ? "" : "hidden"}`}
                   key={"exp-li-" + exp.id}
                 >
-                  {openExpList ? (
+                  {/* {openExpList ? (
                     <JourneyBlock
                       delay={exp.delay}
                       date={exp.date}
@@ -82,33 +84,47 @@ export default function JourneySection() {
                     />
                   ) : (
                     ""
-                  )}
+                  )} */}
+                  <JourneyBlock
+                    delay={exp.delay}
+                    date={exp.date}
+                    title={exp.title}
+                    company={exp.company}
+                    htmlDom={exp.htmlDom}
+                    link={exp.link}
+                    links={exp.links}
+                    tech={exp.tech}
+                    visible={true}
+                    key={"exp-item-" + exp.id}
+                  />
                 </li>
               );
             })}
           </div>
           <div className="flex flex-col gap-10 my-10 xs:my-24 mx-6">
             <div
-              className={`${
-                openFormationList ? "sticky" : "static"
-              } top-12 left-0 right-0 sm:static lg:static -m-6 w-screen sm:w-max bg-white/50 dark:bg-slate-800/50 lg:bg-transparent lg:dark:bg-transparent z-20 sm:z-0 backdrop-blur flex pl-6  py-5 sm:pl-12`}
+              // className={`${
+              //   openFormationList ? "sticky" : "static"
+              // } top-12 left-0 right-0 sm:static lg:static -m-6 w-screen sm:w-max bg-white/50 dark:bg-slate-800/50 lg:bg-transparent lg:dark:bg-transparent z-20 sm:z-0 backdrop-blur flex pl-6  py-5 sm:pl-12`}
+              className="sticky top-12 left-0 right-0 sm:static lg:static -m-6 w-screen sm:w-max bg-white/50 dark:bg-slate-800/50 lg:bg-transparent lg:dark:bg-transparent z-20 sm:z-0 backdrop-blur flex pl-6  py-5 sm:pl-12"
             >
               <div className="text-slate-800 dark:text-slate-200 w-full">
                 <span
                   className="text-base font-bold lg:text-lg flex gap-6 items-center hover:text-sky-300 cursor-pointer"
-                  onClick={handleOpenFormationList}
+                  // onClick={handleOpenFormationList}
                 >
                   Formations
-                  <span>
+                  {/* <span>
                     <MdOutlineExpandMore className="w-5 h-5" />
-                  </span>
+                  </span> */}
                 </span>
               </div>
             </div>
             {formations.map((formation) => {
               return (
                 <li
-                  className={`list-none ${openFormationList ? "" : "hidden"}`}
+                  className="list-none"
+                  // className={`list-none ${openFormationList ? "" : "hidden"}`}
                   key={"formation-li-" + formation.id}
                 >
                   <JourneyBlock
@@ -120,7 +136,7 @@ export default function JourneySection() {
                     link={formation.link}
                     tech={formation.tech}
                     detail={formation.detail}
-                    visible={openFormationList}
+                    visible={true}
                     key={"formation-item-" + formation.id}
                   />
                 </li>

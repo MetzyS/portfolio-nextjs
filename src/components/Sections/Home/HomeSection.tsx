@@ -5,21 +5,19 @@ import NoSsr from "@/utils/NoSsr";
 
 export function HomeSection() {
   return (
-    <NoSsr>
-      <RevealWrapper
-        delay={0}
-        useDelay="always"
-        opacity={0}
-        reset={false}
-        className="load-hidden"
-      >
-        <div className="md:grid md:grid-cols-6 min-h-screen relative" id="home">
-          <div className="flex col-span-full m-auto min-h-screen">
-            <MainDescription />
-            <MainAvatar />
-          </div>
+    <RevealWrapper
+      delay={0}
+      useDelay="always"
+      opacity={0}
+      reset={false}
+      className="load-hidden"
+    >
+      <div className="md:grid md:grid-cols-6 min-h-screen relative" id="home">
+        <div className="flex col-span-full m-auto min-h-screen">
+          <MainDescription />
+          <MainAvatar />
         </div>
-      </RevealWrapper>
-    </NoSsr>
+      </div>
+    </RevealWrapper>
   );
 }

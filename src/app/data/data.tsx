@@ -181,4 +181,13 @@ export const formations = [
           <li>- Accompagner les mineurs dans la réalisation de leurs projets.</li>
           </ul>`,
   },
+  {
+    id: 5,
+    delay: 0,
+    date: "2011",
+    title: "Baccalauréat Sciences et technologies de la gestion",
+    // link: "https://famillesrurales-stjeandefos.jimdofree.com/",
+    detail: "Diplôme",
+    company: "Lycée Jean Moulin - Béziers",
+  },
 ];
