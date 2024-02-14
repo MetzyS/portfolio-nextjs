@@ -32,3 +32,15 @@ html.sr .load-hidden {
 ::-webkit-scrollbar-thumb:hover {
   background: rgba(0, 0, 0, 0.7);
 }
+
+.shirt {
+  cursor: url("/images/cursor/shirt.ico"), auto;
+}
+
+.skin {
+  cursor: url("/images/cursor/skin.ico"), auto;
+}
+
+.laptop {
+  cursor: url("/images/cursor/laptop.ico"), auto;
+}

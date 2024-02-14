@@ -7,6 +7,7 @@ import { AvatarTired } from "@/components/Avatars/AvatarTired";
 import { Ubuntu } from "@next/font/google";
 import { RevealWrapper } from "next-reveal";
 import { about } from "@/app/data/data";
+import StickyTitle from "@/components/StickyTitle";
 
 const ubuntu = Ubuntu({
   subsets: ["latin"],
@@ -17,11 +18,7 @@ export default function AboutSection() {
   return (
     <section id="about" className="pt-20">
       <div className="sticky sm:static top-12 left-0 right-0 -m-6 w-screen sm:w-max bg-zinc-50/60 dark:bg-slate-800/50 lg:bg-transparent lg:dark:bg-transparent z-20 sm:z-0 backdrop-blur flex pl-6  py-5 sm:pl-12">
-        <div className="text-slate-800 dark:text-slate-200 w-full">
-          <h1 className="text-2xl md:text-4xl lg:text-4xl font-bold flex gap-6 items-center">
-            Qui suis-je ? ✍🏼
-          </h1>
-        </div>
+        <StickyTitle title="Qui suis-je ?" type="title" />
       </div>
       <div className="flex flex-col gap-10 my-20 xs:my-24 mx-6">
         <RevealWrapper
@@ -32,7 +29,7 @@ export default function AboutSection() {
           className="load-hidden"
         >
           <div className="flex flex-col gap-6 md:grid md:grid-cols-2 md:gap-5 md:gap-y-28">
-            <p className="relative flex flex-col text-base leading-tight text-slate-800 dark:text-slate-300 dark:bg-slate-700/30 bg-indigo-200/20 rounded-lg p-4 md:p-5 shadow-xl shadow-slate-600/20 dark:shadow-slate-900/40 md:shadow-md overflow-hidden">
+            <p className="relative flex flex-col text-base leading-tight text-slate-800 dark:text-slate-300 dark:bg-slate-700/30 bg-blue-600/10 rounded-lg p-4 md:p-5 shadow-xl shadow-slate-600/20 dark:shadow-slate-900/40 md:shadow-md overflow-hidden">
               {about}
             </p>
             <RevealWrapper
@@ -95,7 +92,7 @@ export default function AboutSection() {
               </div>
             </RevealWrapper>
 
-            <p className="relative flex flex-col text-base leading-tight text-slate-800 dark:text-slate-300 dark:bg-slate-700/30 bg-indigo-200/20 rounded-lg p-4 shadow-xl dark:shadow-slate-900/40 md:shadow-md overflow-hidden h-fit">
+            <p className="relative flex flex-col text-base leading-tight text-slate-800 dark:text-slate-300 dark:bg-slate-700/30 bg-blue-600/10 rounded-lg p-4 shadow-xl dark:shadow-slate-900/40 md:shadow-md overflow-hidden h-fit">
               <span className="mb-2 md:mb-0 text-base leading-tight">
                 En dehors de mes sessions de codage, j&apos;aime me détendre
                 grâce à la <strong>lecture</strong> 📖 et aux{" "}

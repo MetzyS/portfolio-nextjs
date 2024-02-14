@@ -5,6 +5,7 @@ import { Ubuntu } from "@next/font/google";
 import JourneyBlock from "@/components/Sections/Journey/JourneyBlock";
 import NoSsr from "@/utils/NoSsr";
 import { expPro, formations } from "@/app/data/data";
+import StickyTitle from "@/components/StickyTitle";
 
 const ubuntu = Ubuntu({
   subsets: ["latin"],
@@ -22,15 +23,9 @@ export default function JourneySection() {
       >
         <section id="parcours" className="pt-20">
           <div className="flex flex-col gap-10 mb-0 mx-6">
-            <h1
-              className={
-                "gap-2 text-2xl md:text-4xl lg:text-4xl font-bold text-slate-800 dark:text-slate-100 drop-shadow-xl mb-10 " +
-                ubuntu.className
-              }
-              id="parcours"
-            >
-              Parcours ⌛
-            </h1>
+            <div className="mb-12">
+              <StickyTitle title="Parcours" type="title" />
+            </div>
             <div className="sticky sm:static top-12 left-0 right-0 -m-6 w-screen sm:w-max bg-zinc-50/60 dark:bg-slate-800/50 lg:bg-transparent lg:dark:bg-transparent z-20 sm:z-0 backdrop-blur flex pl-6  py-5 sm:pl-12">
               <div className="text-slate-800 dark:text-slate-200 w-full">
                 <span className="text-base font-bold lg:text-lg flex gap-6 items-center">
