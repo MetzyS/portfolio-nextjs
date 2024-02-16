@@ -33,14 +33,18 @@ html.sr .load-hidden {
   background: rgba(0, 0, 0, 0.7);
 }
 
-.shirt {
-  cursor: url("/images/cursor/shirt.ico"), auto;
+.cursor-shirt {
+  cursor: url("/images/cursor/shirt.png") 10 10, pointer;
 }
 
-.skin {
-  cursor: url("/images/cursor/skin.ico"), auto;
+.cursor-laptop {
+  cursor: url("/images/cursor/laptop.png") 10 10, pointer;
 }
 
-.laptop {
-  cursor: url("/images/cursor/laptop.ico"), auto;
+.cursor-skin {
+  cursor: url("/images/cursor/skin.png") 10 10, pointer;
+}
+
+.cursor-sleeve {
+  cursor: url("/images/cursor/sleeve.png") 10 10, pointer;
 }
