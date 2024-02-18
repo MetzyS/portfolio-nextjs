@@ -210,7 +210,7 @@ export const formations = [
     delay: 0,
     date: "2011",
     title: "Baccalauréat Sciences et technologies de la gestion",
-    // link: "https://famillesrurales-stjeandefos.jimdofree.com/",
+    link: "https://jean-moulin-beziers.mon-ent-occitanie.fr/",
     detail: "Diplôme",
     company: "Lycée Jean Moulin - Béziers",
   },

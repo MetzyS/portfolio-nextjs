@@ -9,8 +9,8 @@ export default function Home() {
     <>
       <HomeSection />
       <AboutSection />
-      <JourneySection />
       <ProjectSection />
+      <JourneySection />
     </>
   );
 }

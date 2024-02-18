@@ -12,6 +12,7 @@ import { PiPathFill } from "react-icons/pi";
 import { AiOutlineQuestionCircle } from "react-icons/ai";
 import { IoHomeOutline } from "react-icons/io5";
 import Link from "next/link";
+import { Fragment } from "react";
 
 const roboto = Roboto({
   subsets: ["latin"],
@@ -27,6 +28,32 @@ let active = true;
 
 export const NavBar = () => {
   const { menu, toggleMenu, closeMenu } = useMenu();
+  const nav_links = [
+    {
+      id: 1,
+      text: "Accueil",
+      path: "/",
+      icon: IoHomeOutline,
+    },
+    {
+      id: 2,
+      text: "A propos",
+      path: "#about",
+      icon: AiOutlineQuestionCircle,
+    },
+    {
+      id: 3,
+      text: "Projets",
+      path: "#projets",
+      icon: HiCodeBracket,
+    },
+    {
+      id: 4,
+      text: "Parcours",
+      path: "#parcours",
+      icon: PiPathFill,
+    },
+  ];
   return (
     <header className="w-full">
       <nav
@@ -53,33 +80,19 @@ export const NavBar = () => {
                 menu ? "opacity-100" : "opacity-0"
               } transition-all`}
             >
-              <NavLink
-                text={"Accueil"}
-                path="/"
-                icon={IoHomeOutline}
-                className="text-xs md:text-sm lg:text-base transition-all"
-              />
-              <span className="w-0 h-5 border-0 border-r border-slate-300 dark:border-slate-700"></span>
-              <NavLink
-                text={"A propos"}
-                path="#about"
-                icon={AiOutlineQuestionCircle}
-                className="text-xs md:text-sm lg:text-base transition-all"
-              />
-              <span className="w-0 h-5 border-0 border-r border-slate-300 dark:border-slate-700"></span>
-              <NavLink
-                text={"Parcours"}
-                path="#parcours"
-                icon={PiPathFill}
-                className="text-xs md:text-sm lg:text-base transition-all"
-              />
-              <span className="w-0 h-5 border-0 border-r border-slate-300 dark:border-slate-700"></span>
-              <NavLink
-                text={"Projets"}
-                path="#projets"
-                icon={HiCodeBracket}
-                className="text-xs md:text-sm lg:text-base transition-all"
-              />
+              {nav_links.map((item) => {
+                return (
+                  <Fragment key={"navlink-" + item.id}>
+                    <NavLink
+                      text={item.text}
+                      path={item.path}
+                      icon={item.icon}
+                      className="text-xs md:text-sm lg:text-base transition-all"
+                    />
+                    <span className="w-0 h-5 border-0 border-r border-slate-300 dark:border-slate-700 last-of-type:hidden"></span>
+                  </Fragment>
+                );
+              })}
             </div>
           </div>
         </div>
