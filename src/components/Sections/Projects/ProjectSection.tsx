@@ -4,7 +4,8 @@ import StickyTitle from "@/components/StickyTitle";
 import NoSsr from "@/utils/NoSsr";
 import { RevealWrapper } from "next-reveal";
 import ProjectCard from "./ProjectCard";
-import { projects } from "@/app/data/data";
+import { projects, imagesCarousel } from "@/app/data/data";
+import Carousel from "@/components/Carousel/Carousel";
 
 export default function ProjectSection() {
   return (
@@ -44,6 +45,7 @@ export default function ProjectSection() {
               ))}
             </RevealWrapper>
           </ul>
+          <Carousel />
         </div>
       </section>
     </NoSsr>

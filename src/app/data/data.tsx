@@ -290,3 +290,76 @@ export const projects = [
     github: "https://github.com/MetzyS/pelote-et-rebelote",
   },
 ];
+
+export const imagesCarousel = [
+  {
+    id: 0,
+    src: "/images/carousel/0.jpg",
+    alt: "Réalisation graphique - Page de garde du projet pédagogique de la ludothèque",
+  },
+  {
+    id: 1,
+    src: "/images/carousel/1.jpg",
+    alt: "Réalisation graphique - Flyer ludothèque",
+  },
+  {
+    id: 2,
+    src: "/images/carousel/2.jpg",
+    alt: "Réalisation graphique - Dépliant programme d'activités vacances d'hiver 2019",
+  },
+  {
+    id: 3,
+    src: "/images/carousel/3.jpg",
+    alt: "Réalisation graphique - Dépliant programme d'activités des mercredis",
+  },
+  {
+    id: 4,
+    src: "/images/carousel/4.jpg",
+    alt: "Réalisation graphique - Dépliant programme d'activités vacances de la Toussaint",
+  },
+  {
+    id: 5,
+    src: "/images/carousel/5.jpg",
+    alt: "Réalisation graphique - Flyer loto des jeunes Familles Rurales",
+  },
+  {
+    id: 6,
+    src: "/images/carousel/6.jpg",
+    alt: "Réalisation graphique - Infographie Bilan CEJ 2018 1ère page",
+  },
+  {
+    id: 7,
+    src: "/images/carousel/7.jpg",
+    alt: "Réalisation graphique - Infographie Bilan CEJ 2018 2ème page",
+  },
+  {
+    id: 8,
+    src: "/images/carousel/8.jpg",
+    alt: "Réalisation graphique - Infographie Bilan CEJ 2018 3ème page",
+  },
+  {
+    id: 9,
+    src: "/images/carousel/9.jpg",
+    alt: "Réalisation graphique - Flyer publicitaire Hérault Carte Grise recto",
+  },
+  {
+    id: 10,
+    src: "/images/carousel/10.jpg",
+    alt: "Réalisation graphique - Flyer publicitaire Hérault Carte Grise verso",
+  },
+  {
+    id: 11,
+    src: "/images/carousel/11.jpg",
+    alt: "Réalisation graphique - Flyer publicitaire Univers du Téléphone 1",
+  },
+  {
+    id: 12,
+    src: "/images/carousel/12.jpg",
+    alt: "Réalisation graphique - Flyer publicitaire Univers du Téléphone 2",
+  },
+  {
+    id: 13,
+    src: "/images/carousel/13.jpg",
+    alt: "Réalisation graphique - Flyer jeu concours CareCover",
+  },
+];
