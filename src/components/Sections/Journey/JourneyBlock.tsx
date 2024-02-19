@@ -29,7 +29,7 @@ export default function JourneyBlock(props: {
                   target="_blank"
                   className="inline-flex font-medium leading-snug text-slate-900 dark:text-slate-200 dark:hover:text-sky-300 hover:text-blue-600 group-hover/item:text-blue-600 group-hover/item:dark:text-sky-300"
                 >
-                  <span className="">
+                  <span>
                     {props.title}{" "}
                     <span className="inline-block ml-2 align-text-bottom">
                       <LiaExternalLinkAltSolid className="w-5 h-5" />

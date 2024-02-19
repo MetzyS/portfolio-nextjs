@@ -215,3 +215,78 @@ export const formations = [
     company: "Lycée Jean Moulin - Béziers",
   },
 ];
+
+export const projects = [
+  {
+    id: 0,
+    title: "Portfolio MetzyS",
+    description: "Mon portfolio",
+    link: "/",
+    img: "/images/projects/portfolio.jpg",
+    tech: [
+      "NextJS",
+      "React",
+      "Zustand",
+      "JavaScript",
+      "Tailwind",
+      "Illustrator",
+    ],
+    github: "https://github.com/MetzyS/portfolio-nextjs",
+  },
+  {
+    id: 1,
+    title: "Projet Cloud",
+    description: `<p>Plateforme de partage, d'archivage et de gestion de fichiers crée pour une entreprise from scratch.</p><p>Plusieurs rôles avec différents droits/accès</p>
+      <ul>
+      <li>- Superadmin: Gestion des comptes (création, suppression, modification, attribution des rôles..),</li>
+      <li>- Admin: Gestion des fichiers et dossiers, gestions des comptes (utilisateurs seulement)</li>
+      <li>- Utilisateur: Consultation des fichiers uniquement</li>
+      </ul>`,
+    link: "https://metzys.net/projet-cloud/public/home/index",
+    img: "/images/projects/cloud_homepage.jpg",
+    tech: ["PHP", "JavaScript", "MySQL", "HTML", "CSS", "PHPMailer", "Figma"],
+    github: "https://github.com/MetzyS/cloud",
+  },
+  {
+    id: 2,
+    title: "L'Univers du Téléphone",
+    description: `
+    <p>Site vitrine avec back-end.</p>
+    <p>Le backend possède diverses fonctionnalités telles que:</p>
+    <ul>
+    <li>- Consultation/lecture des messages reçu (via le formulaire de contact)</li>
+    <li>- Réponse aux messages (PHPMailer)</li>
+    <li>- Changement du statut des messages ("lu", "non-lu", "traîté")</li>
+    <li>- Suppression des messages</li>
+    </ul>
+    `,
+    link: "https://universdutelephone.fr/",
+    img: "/images/projects/univtel.jpg",
+    tech: ["PHP", "JavaScript", "MySQL", "HTML", "CSS", "PHPMailer", "Figma"],
+    github: "https://github.com/MetzyS/univtel",
+  },
+  {
+    id: 3,
+    title: "Mini Walkman Player (JS)",
+    description: `
+    <p>Petit lecteur audio retro.</p>
+    <p>Réalisé au cours de ma formation (DWWM), ce petit projet avait pour objectif de mettre en avant nos capacités en JavaScript (vanilla, aucun framework autorisé).</p>
+    `,
+    link: "https://metzys.net/projet-player/index.html",
+    img: "/images/projects/mediaplayer.jpg",
+    tech: ["JavaScript", "HTML", "CSS", "Illustrator"],
+    github: "https://github.com/MetzyS/mediaPlayer",
+  },
+  {
+    id: 4,
+    title: "Association Pelote et Rebelote",
+    description: `
+    <p>Site associatif (fictif).</p>
+    <p>Réalisé au cours de ma formation (DWWM), ce petit projet avait pour objectif de mettre en avant nos capacités en HTML/CSS.</p>
+    `,
+    link: "https://www.metzys.net/projet-pelote/index.html",
+    img: "/images/projects/pelote.jpg",
+    tech: ["HTML", "CSS", "Figma"],
+    github: "https://github.com/MetzyS/pelote-et-rebelote",
+  },
+];

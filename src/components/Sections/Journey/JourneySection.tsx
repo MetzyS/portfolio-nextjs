@@ -33,23 +33,25 @@ export default function JourneySection() {
                 </span>
               </div>
             </div>
-            {expPro.map((exp) => {
-              return (
-                <li className="list-none" key={"exp-li-" + exp.id}>
-                  <JourneyBlock
-                    delay={exp.delay}
-                    date={exp.date}
-                    title={exp.title}
-                    company={exp.company}
-                    htmlDom={exp.htmlDom}
-                    link={exp.link}
-                    links={exp.links}
-                    tech={exp.tech}
-                    key={"exp-item-" + exp.id}
-                  />
-                </li>
-              );
-            })}
+            <ul>
+              {expPro.map((exp) => {
+                return (
+                  <li className="list-none" key={"exp-li-" + exp.id}>
+                    <JourneyBlock
+                      delay={exp.delay}
+                      date={exp.date}
+                      title={exp.title}
+                      company={exp.company}
+                      htmlDom={exp.htmlDom}
+                      link={exp.link}
+                      links={exp.links}
+                      tech={exp.tech}
+                      key={"exp-item-" + exp.id}
+                    />
+                  </li>
+                );
+              })}
+            </ul>
           </div>
           <div className="flex flex-col gap-10 my-10 xs:my-24 mx-6">
             <div className="sticky top-12 left-0 right-0 sm:static lg:static -m-6 w-screen sm:w-max bg-white/50 dark:bg-slate-800/50 lg:bg-transparent lg:dark:bg-transparent z-20 sm:z-0 backdrop-blur flex pl-6  py-5 sm:pl-12">
