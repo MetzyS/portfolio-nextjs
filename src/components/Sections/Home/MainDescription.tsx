@@ -1,6 +1,6 @@
 import { DecorationTag } from "@/components/DecorationTag";
 import { DefaultBtn } from "@/components/DefaultBtn";
-import { Inconsolata, Ubuntu } from "@next/font/google";
+import { Inconsolata, Ubuntu } from "next/font/google";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { BsChevronDoubleDown } from "react-icons/bs";
 import Link from "next/link";

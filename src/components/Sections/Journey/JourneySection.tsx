@@ -1,7 +1,7 @@
 "use client";
 
 import { RevealWrapper } from "next-reveal";
-import { Ubuntu } from "@next/font/google";
+import { Ubuntu } from "next/font/google";
 import JourneyBlock from "@/components/Sections/Journey/JourneyBlock";
 import NoSsr from "@/utils/NoSsr";
 import { expPro, formations } from "@/app/data/data";

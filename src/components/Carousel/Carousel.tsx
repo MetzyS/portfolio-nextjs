@@ -47,7 +47,7 @@ export default function Carousel() {
         />
       </div>
       <div className="flex h-24 w-full overflow-y-scroll gap-2">
-        {imagesCarousel.map((item) => (
+        {imagesCarousel.map((item, index) => (
           <img
             src={item.src}
             alt={item.alt}
@@ -59,6 +59,7 @@ export default function Carousel() {
             onClick={() => {
               handleThumbnailClick(item.id);
             }}
+            key={"carousselimg-" + index}
           />
         ))}
       </div>

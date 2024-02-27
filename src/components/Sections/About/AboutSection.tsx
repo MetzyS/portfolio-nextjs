@@ -4,7 +4,7 @@ import { AvatarBoat } from "@/components/Avatars/AvatarBoat";
 import { AvatarCloud } from "@/components/Avatars/AvatarCloud";
 import { AvatarHappy } from "@/components/Avatars/AvatarHappy";
 import { AvatarTired } from "@/components/Avatars/AvatarTired";
-import { Ubuntu } from "@next/font/google";
+import { Ubuntu } from "next/font/google";
 import { RevealWrapper } from "next-reveal";
 import { about } from "@/app/data/data";
 import StickyTitle from "@/components/StickyTitle";

@@ -1,7 +1,7 @@
 "use client";
 import { useMenu } from "@/app/stores/useMenu";
-import { Roboto } from "@next/font/google";
-import { Roboto_Mono } from "@next/font/google";
+import { Roboto } from "next/font/google";
+import { Roboto_Mono } from "next/font/google";
 import { DefaultBtn } from "../DefaultBtn";
 import { MenuBtn } from "../MenuBtn";
 import { MetzysLogo } from "../MetzysLogo";

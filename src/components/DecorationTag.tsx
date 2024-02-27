@@ -1,4 +1,4 @@
-import { Roboto_Mono } from "@next/font/google";
+import { Roboto_Mono } from "next/font/google";
 
 const roboto_mono = Roboto_Mono({
   subsets: ["latin"],
