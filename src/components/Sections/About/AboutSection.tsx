@@ -16,7 +16,7 @@ const ubuntu = Ubuntu({
 
 export default function AboutSection() {
   return (
-    <section id="about" className="pt-20">
+    <section id="about" className={"pt-20"}>
       <div className="sticky sm:static top-12 left-0 right-0 -m-6 w-screen sm:w-max bg-zinc-50/60 dark:bg-slate-800/50 lg:bg-transparent lg:dark:bg-transparent z-20 sm:z-0 backdrop-blur flex pl-6 py-5 sm:pl-12">
         <RevealWrapper
           delay={100}

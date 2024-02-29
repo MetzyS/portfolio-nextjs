@@ -13,6 +13,7 @@ import { AiOutlineQuestionCircle } from "react-icons/ai";
 import { IoHomeOutline } from "react-icons/io5";
 import Link from "next/link";
 import { Fragment } from "react";
+import { ContactBtn } from "../ContactBtn";
 
 const roboto = Roboto({
   subsets: ["latin"],
@@ -102,11 +103,12 @@ export const NavBar = () => {
           }`}
         >
           <ThemeSwitcher />
-          <DefaultBtn
+          <ContactBtn />
+          {/* <DefaultBtn
             text="Contact"
             className="font-semibold transition-all"
             download={false}
-          />
+          /> */}
         </div>
       </nav>
     </header>

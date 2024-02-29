@@ -1,7 +1,6 @@
 import { RevealWrapper } from "next-reveal";
 import { MainDescription } from "./MainDescription";
 import { MainAvatar } from "./MainAvatar";
-import NoSsr from "@/utils/NoSsr";
 
 export function HomeSection() {
   return (
