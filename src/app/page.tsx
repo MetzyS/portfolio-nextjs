@@ -1,4 +1,5 @@
 "use client";
+import Footer from "@/components/Footer/Footer";
 import AboutSection from "@/components/Sections/About/AboutSection";
 import { HomeSection } from "@/components/Sections/Home/HomeSection";
 import JourneySection from "@/components/Sections/Journey/JourneySection";

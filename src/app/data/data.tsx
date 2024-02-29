@@ -84,6 +84,22 @@ export const expPro = [
   {
     id: 4,
     delay: 150,
+    date: "2017 — 2020",
+    title: "Responsable Ludothèque",
+    link: "https://famillesrurales-stjeandefos.jimdofree.com/",
+    company: "Familles Rurales - Saint Jean de Fos",
+    htmlDom: `<span>Organisation, gestion et animation de la ludothèque.</span> 
+            <ul>
+            <li>- Organisation et animation: recherche de partenariats, organisation de l'accueil (chaque vendredi soir + veillées et interventions extérieures).</li>
+            <li>- Gestion: gestion financière, gestion + rotation des jeux en stock, ré-approvisionnement... </li>
+            <li>- Gestion de la communication et infographie: affiches, flyers,bilans... </li>
+            <li>- Animation: animation des temps d'activités.</li>
+            </ul>`,
+    tech: ["Photoshop", "Illustrator"],
+  },
+  {
+    id: 5,
+    delay: 150,
     date: "2017 — 2018",
     title: "Directeur adjoint Accueil Collectif de Mineurs",
     link: "https://famillesrurales-stjeandefos.jimdofree.com/",
@@ -100,7 +116,7 @@ export const expPro = [
     tech: ["Photoshop", "Illustrator"],
   },
   {
-    id: 5,
+    id: 6,
     delay: 150,
     date: "2016 — 2017",
     title: "Animateur Socioculturel (ALSH/ALP)",
@@ -115,7 +131,7 @@ export const expPro = [
             </ul>`,
   },
   {
-    id: 6,
+    id: 7,
     delay: 150,
     date: "2014 — 2015",
     title: "Animateur Socioculturel (ALSH)",
@@ -241,12 +257,13 @@ export const projects = [
   {
     id: 1,
     title: "Projet Cloud",
-    description: `<p>Plateforme de partage, d'archivage et de gestion de fichiers crée pour une entreprise from scratch.</p><p>Plusieurs rôles avec différents droits/accès</p>
+    description: `<p>Plateforme de partage, d'archivage et de gestion de fichiers crée pour une entreprise from scratch (architecture MVC).</p><p>Plusieurs rôles avec différents droits/accès</p>
       <ul>
       <li>- Superadmin: Gestion des comptes (création, suppression, modification, attribution des rôles..),</li>
       <li>- Admin: Gestion des fichiers et dossiers, gestions des comptes (utilisateurs seulement)</li>
       <li>- Utilisateur: Consultation des fichiers uniquement</li>
-      </ul>`,
+      </ul>
+      <p>N'hésitez pas a me contacter pour avoir accès au site!</p>`,
     link: "https://cloud.metzys.net/www/cloud/public/",
     img: "/images/projects/cloud_homepage.jpg",
     tech: ["PHP", "JavaScript", "MySQL", "HTML", "CSS", "PHPMailer", "Figma"],
@@ -275,7 +292,8 @@ export const projects = [
     title: "Mini Walkman Player (JS)",
     description: `
     <p>Petit lecteur audio retro.</p>
-    <p>Réalisé au cours de ma formation (DWWM), ce petit projet avait pour objectif de mettre en avant nos capacités en JavaScript (vanilla, aucun framework autorisé).</p>
+    <p>Réalisé au cours de ma formation (DWWM), ce petit projet avait pour objectif de mettre en avant nos capacités en JavaScript (vanilla, aucun framework autorisé), il faisait partie d'un hackathon solo à l'issue duquel les participants étaient classés selon 4 critères (original, esthétique, abouti et ambitieux).</p>
+    <p>Grâce à ce projet, j'ai fini premier du classement sur les 4 critères évalués.</p>
     `,
     link: "https://walkman.metzys.net/",
     img: "/images/projects/mediaplayer.jpg",

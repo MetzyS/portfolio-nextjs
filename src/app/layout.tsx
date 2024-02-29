@@ -4,6 +4,7 @@ import { ThemeProvider } from "./providers/ThemeProvider";
 import "./globals.css";
 import { NavBar } from "@/components/Nav/NavBar";
 import Script from "next/script";
+import Footer from "@/components/Footer/Footer";
 
 export const metadata: Metadata = {
   title: "MetzyS - Portfolio",
@@ -31,6 +32,7 @@ export default function RootLayout({
           </main>
         </ThemeProvider>
         <Script src="/script/cursorGlow.js" strategy={"lazyOnload"} />
+        <Footer />
       </body>
     </html>
   );
