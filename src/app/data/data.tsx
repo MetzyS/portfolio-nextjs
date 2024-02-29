@@ -220,8 +220,13 @@ export const projects = [
   {
     id: 0,
     title: "Portfolio MetzyS",
-    description: "Mon portfolio",
-    link: "/",
+    description: `<p> Mon portfolio, la création de celui-ci m'a permis d'apprendre à me servir de : </p> 
+    <ul>
+    <li>- React + Zustand (state management),</li>
+    <li>- NextJS + TypeScript.</li>
+    </ul>
+    <p>Je me suis même amusé a créer mes propres SVG (avec Illustrator) et a permettre à l'utilisateur de modifier quelques détails (couleur de peau, du t-shirt, de l'ordinateur.. en cliquant sur l'élement voulu), ce qui se répercute sur tout les SVG présent sur le site (uniquement en version desktop).</p>`,
+    link: "https://www.metzys.net/",
     img: "/images/projects/portfolio.jpg",
     tech: [
       "NextJS",
@@ -242,7 +247,7 @@ export const projects = [
       <li>- Admin: Gestion des fichiers et dossiers, gestions des comptes (utilisateurs seulement)</li>
       <li>- Utilisateur: Consultation des fichiers uniquement</li>
       </ul>`,
-    link: "https://metzys.net/projet-cloud/public/home/index",
+    link: "https://cloud.metzys.net/www/cloud/public/",
     img: "/images/projects/cloud_homepage.jpg",
     tech: ["PHP", "JavaScript", "MySQL", "HTML", "CSS", "PHPMailer", "Figma"],
     github: "https://github.com/MetzyS/cloud",
@@ -272,7 +277,7 @@ export const projects = [
     <p>Petit lecteur audio retro.</p>
     <p>Réalisé au cours de ma formation (DWWM), ce petit projet avait pour objectif de mettre en avant nos capacités en JavaScript (vanilla, aucun framework autorisé).</p>
     `,
-    link: "https://metzys.net/projet-player/index.html",
+    link: "https://walkman.metzys.net/",
     img: "/images/projects/mediaplayer.jpg",
     tech: ["JavaScript", "HTML", "CSS", "Illustrator"],
     github: "https://github.com/MetzyS/mediaPlayer",
@@ -283,8 +288,9 @@ export const projects = [
     description: `
     <p>Site associatif (fictif).</p>
     <p>Réalisé au cours de ma formation (DWWM), ce petit projet avait pour objectif de mettre en avant nos capacités en HTML/CSS.</p>
+    <p>C'est mon tout premier site web static!</p>
     `,
-    link: "https://www.metzys.net/projet-pelote/index.html",
+    link: "https://www.pelote.metzys.net/",
     img: "/images/projects/pelote.jpg",
     tech: ["HTML", "CSS", "Figma"],
     github: "https://github.com/MetzyS/pelote-et-rebelote",
@@ -296,70 +302,96 @@ export const imagesCarousel = [
     id: 0,
     src: "/images/carousel/0.jpg",
     alt: "Réalisation graphique - Page de garde du projet pédagogique de la ludothèque",
+    desc: "Page de garde projet pédagogique ludothèque Familles Rurales",
   },
   {
     id: 1,
     src: "/images/carousel/1.jpg",
     alt: "Réalisation graphique - Flyer ludothèque",
+    desc: "Flyer ludothèque Familles Rurales",
   },
   {
     id: 2,
     src: "/images/carousel/2.jpg",
     alt: "Réalisation graphique - Dépliant programme d'activités vacances d'hiver 2019",
+    desc: "Dépliant programme d'activités (hiver 2019) Familles Rurales",
   },
   {
     id: 3,
     src: "/images/carousel/3.jpg",
     alt: "Réalisation graphique - Dépliant programme d'activités des mercredis",
+    desc: "Dépliant programme d'activités (mercredis) Familles Rurales",
   },
   {
     id: 4,
     src: "/images/carousel/4.jpg",
     alt: "Réalisation graphique - Dépliant programme d'activités vacances de la Toussaint",
+    desc: "Dépliant programme d'activités (toussaint 2019) Familles Rurales",
   },
   {
     id: 5,
     src: "/images/carousel/5.jpg",
     alt: "Réalisation graphique - Flyer loto des jeunes Familles Rurales",
+    desc: "Flyer loto des jeunes - Familles Rurales",
   },
   {
     id: 6,
     src: "/images/carousel/6.jpg",
     alt: "Réalisation graphique - Infographie Bilan CEJ 2018 1ère page",
+    desc: "Infographie bilan CEJ 2018 (page 1)",
   },
   {
     id: 7,
     src: "/images/carousel/7.jpg",
     alt: "Réalisation graphique - Infographie Bilan CEJ 2018 2ème page",
+    desc: "Infographie bilan CEJ 2018 (page 2)",
   },
   {
     id: 8,
     src: "/images/carousel/8.jpg",
     alt: "Réalisation graphique - Infographie Bilan CEJ 2018 3ème page",
+    desc: "Infographie bilan CEJ 2018 (page 3)",
   },
   {
     id: 9,
     src: "/images/carousel/9.jpg",
     alt: "Réalisation graphique - Flyer publicitaire Hérault Carte Grise recto",
+    desc: "Flyer publicitaire Hérault Carte Grise recto",
   },
   {
     id: 10,
     src: "/images/carousel/10.jpg",
     alt: "Réalisation graphique - Flyer publicitaire Hérault Carte Grise verso",
+    desc: "Flyer publicitaire Hérault Carte Grise verso",
   },
   {
     id: 11,
     src: "/images/carousel/11.jpg",
     alt: "Réalisation graphique - Flyer publicitaire Univers du Téléphone 1",
+    desc: "Flyer publicitaire Univers du Téléphone",
   },
   {
     id: 12,
     src: "/images/carousel/12.jpg",
     alt: "Réalisation graphique - Flyer publicitaire Univers du Téléphone 2",
+    desc: "Flyer publicitaire Univers du Téléphone",
   },
   {
     id: 13,
     src: "/images/carousel/13.jpg",
     alt: "Réalisation graphique - Flyer jeu concours CareCover",
+    desc: "Flyer jeu concours instagram CareCover",
+  },
+  {
+    id: 14,
+    src: "/images/carousel/14.jpg",
+    alt: "Réalisation graphique - Flyer Tournoi Football FC Villeneuve les Béziers",
+    desc: "Flyer publicitaire tournois football FC Villeneuve-Les-Béziers",
+  },
+  {
+    id: 15,
+    src: "/images/carousel/15.jpg",
+    alt: "Réalisation graphique - Flyer Entreprise NDébarras",
+    desc: "Flyer publicitaire NDebarras",
   },
 ];
