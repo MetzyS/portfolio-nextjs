@@ -53,6 +53,7 @@ export const expPro = [
     date: "2021 — 2022",
     title: "Réparateur informatique",
     // link:"https://www.francecompetences.fr/recherche/rncp/31114/",
+    link: "https://universdutelephone.fr/",
     // detail:"Formation",
     company: "L'Univers du Téléphone - Béziers",
     htmlDom: `<span>Réparation et diagnostique pannes diverses:</span>
@@ -308,7 +309,7 @@ export const projects = [
     <p>Réalisé au cours de ma formation (DWWM), ce petit projet avait pour objectif de mettre en avant nos capacités en HTML/CSS.</p>
     <p>C'est mon tout premier site web static!</p>
     `,
-    link: "https://www.pelote.metzys.net/",
+    link: "https://pelote.metzys.net/",
     img: "/images/projects/pelote.jpg",
     tech: ["HTML", "CSS", "Figma"],
     github: "https://github.com/MetzyS/pelote-et-rebelote",
