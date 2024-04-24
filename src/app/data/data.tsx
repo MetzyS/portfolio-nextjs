@@ -236,6 +236,29 @@ export const formations = [
 export const projects = [
   {
     id: 0,
+    title: "Meteo App",
+    description: `<p> Application web de consultation/suivi météo </p> 
+    <ul>
+    <li>- Recherche par ville: Entrez les premières lettres de la ville souhaitée dans le champ de saisie "Recherche".</li>
+    <li>- Résumé température actuelle: Nom de la ville, température, description, température max/min, taux d'humidité, date et heure.</li>
+    <li>- Température heure par heure: Visualisation des variations de températures et des conditions météorologiques au cours des 24 prochaines heures.</li>
+    <li>- Prévision météorologiques des 7 prochains jours: Visualisation des températures moyennes et des conditions météorologiques des 7 prochains jours.</li>
+    <li>- Carte interactive: Visualisation de l'emplacement de la ville consultée.</li>
+    </ul>`,
+    link: "https://meteo.metzys.net/",
+    img: "/images/projects/meteo-app.jpg",
+    tech: [
+      "React",
+      "Vite",
+      "TypeScript",
+      "Tailwind",
+      "OpenWeatherMap (API)",
+      "OpenLayers (Map)",
+    ],
+    github: "https://github.com/MetzyS/meteo-app",
+  },
+  {
+    id: 1,
     title: "Portfolio MetzyS",
     description: `<p> Mon portfolio, la création de celui-ci m'a permis d'apprendre à me servir de : </p> 
     <ul>
@@ -256,7 +279,7 @@ export const projects = [
     github: "https://github.com/MetzyS/portfolio-nextjs",
   },
   {
-    id: 1,
+    id: 2,
     title: "Projet Cloud",
     description: `<p>Plateforme de partage, d'archivage et de gestion de fichiers crée pour une entreprise from scratch (architecture MVC).</p><p>Plusieurs rôles avec différents droits/accès</p>
       <ul>
@@ -271,7 +294,7 @@ export const projects = [
     github: "https://github.com/MetzyS/cloud",
   },
   {
-    id: 2,
+    id: 3,
     title: "L'Univers du Téléphone",
     description: `
     <p>Site vitrine avec back-end.</p>
@@ -289,7 +312,7 @@ export const projects = [
     github: "https://github.com/MetzyS/univtel",
   },
   {
-    id: 3,
+    id: 4,
     title: "Mini Walkman Player (JS)",
     description: `
     <p>Petit lecteur audio retro.</p>
@@ -302,7 +325,7 @@ export const projects = [
     github: "https://github.com/MetzyS/mediaPlayer",
   },
   {
-    id: 4,
+    id: 5,
     title: "Association Pelote et Rebelote",
     description: `
     <p>Site associatif (fictif).</p>
